@@ -1108,3 +1108,28 @@ body {
     font-family: var(--font-mono);
     margin-bottom: 0.25rem;
 }
+
+/* Download notes (Windows SmartScreen, checksums, current version) */
+.dl-note {
+    margin-top: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--text-muted, #8b949e);
+}
+
+.dl-version {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.dl-checksum {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted, #8b949e);
+}
+
+.dl-checksum a {
+    color: inherit;
+    text-decoration: underline;
+}

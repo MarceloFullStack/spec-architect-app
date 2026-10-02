@@ -58,7 +58,7 @@
             <div class="hero-actions">
                 <a href="#download" class="btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Baixar Spec Architect (.deb / .AppImage)
+                    Baixar Spec Architect (Windows / Linux)
                 </a>
                 <a href="#o-que-resolve" class="btn-secondary">
                     O Que Ele Resolve na Prática ↓
@@ -427,6 +427,7 @@
                     <p class="section-desc">
                         Binários autocontidos com verificação criptográfica SHA-256 incluída.
                     </p>
+                    <p class="section-desc dl-version" id="dl-version" hidden></p>
                 </div>
 
                 <div class="download-cards">
@@ -438,13 +439,13 @@
                         </div>
                         <p class="dl-desc">Binários oficiais para distribuições baseadas em Debian, Ubuntu, Fedora e Arch Linux.</p>
                         <div class="dl-actions">
-                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.deb" class="dl-btn primary">
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/spec-architect_amd64.deb" class="dl-btn primary" data-asset="spec-architect_amd64.deb">
                                 <span>Baixar Pacote .deb</span>
-                                <span class="dl-meta">50.9 MB</span>
+                                <span class="dl-meta">Debian / Ubuntu</span>
                             </a>
-                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.AppImage" class="dl-btn secondary">
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/spec-architect_amd64.AppImage" class="dl-btn secondary" data-asset="spec-architect_amd64.AppImage">
                                 <span>Baixar Universal .AppImage</span>
-                                <span class="dl-meta">141.5 MB</span>
+                                <span class="dl-meta">Qualquer distro</span>
                             </a>
                         </div>
                     </div>
@@ -453,27 +454,29 @@
                     <div class="dl-card">
                         <div class="dl-header">
                             <span class="dl-os">🪟 Windows</span>
-                            <span class="dl-badge soon">Em Breve</span>
+                            <span class="dl-badge">Disponível</span>
                         </div>
-                        <p class="dl-desc">Instaladores nativos x64 com suporte para Windows 10 e Windows 11.</p>
+                        <p class="dl-desc">Windows 10 e Windows 11 x64. Instale sem precisar de administrador, ou use a versão portátil: extraia e execute.</p>
                         <div class="dl-actions">
-                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases" class="dl-btn secondary">
-                                <span>Ver Releases no GitHub</span>
-                                <span class="dl-meta">CI/CD Pipeline</span>
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/spec-architect_x64-setup.exe" class="dl-btn primary" data-asset="spec-architect_x64-setup.exe">
+                                <span>Baixar Instalador .exe</span>
+                                <span class="dl-meta">Sem admin</span>
                             </a>
-                            <a href="https://github.com/MarceloFullStack/spec-architect-app/issues" class="dl-btn secondary">
-                                <span>Solicitar Notificação</span>
-                                <span class="dl-meta">GitHub Issues</span>
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/spec-architect_x64-portable.zip" class="dl-btn secondary" data-asset="spec-architect_x64-portable.zip">
+                                <span>Baixar Portátil .zip</span>
+                                <span class="dl-meta">Sem instalar</span>
                             </a>
                         </div>
+                        <p class="dl-note">O executável ainda não é assinado: na primeira execução o Windows SmartScreen avisa. Clique em <em>Mais informações → Executar assim mesmo</em>.</p>
                     </div>
                 </div>
 
                 <!-- Terminal Quick Run -->
                 <div class="quick-install">
-                    <span class="code-snippet">chmod +x spec-architect_0.1.0_amd64.AppImage &amp;&amp; ./spec-architect_0.1.0_amd64.AppImage</span>
-                    <button class="copy-btn" onclick="navigator.clipboard.writeText('chmod +x spec-architect_0.1.0_amd64.AppImage &amp;&amp; ./spec-architect_0.1.0_amd64.AppImage'); this.innerText='Copiado!'; setTimeout(() => this.innerText='Copiar', 2000);">Copiar</button>
+                    <span class="code-snippet">chmod +x spec-architect_amd64.AppImage &amp;&amp; ./spec-architect_amd64.AppImage</span>
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText('chmod +x spec-architect_amd64.AppImage && ./spec-architect_amd64.AppImage'); this.innerText='Copiado!'; setTimeout(() => this.innerText='Copiar', 2000);">Copiar</button>
                 </div>
+                <p class="dl-checksum"><a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a> · <a href="https://github.com/MarceloFullStack/spec-architect-app/releases">Todas as versões</a></p>
             </div>
         </section>
 

@@ -4,12 +4,12 @@
  */
 
 // Configuration
-const GITHUB_RELEASE_BASE = 'https://github.com/MarceloFullStack/spec-architect-app/releases/download';
+const RELEASE_REPO = 'MarceloFullStack/spec-architect-app';
 
 // Initialize the app when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
-    initializeDownloadLinks();
+    initializeLatestRelease();
     initializeTheme();
 });
 
@@ -42,65 +42,29 @@ function initializeNavigation() {
 }
 
 /**
- * Initialize download links with version detection and platform-specific handling
+ * Download buttons link to releases/latest/download/<file>, which always
+ * serves the newest release. This only adds the version and file sizes;
+ * if the GitHub API is unreachable the buttons keep working as they are.
  */
-function initializeDownloadLinks() {
-    const downloadLinks = document.querySelectorAll('.download-link');
-
-    downloadLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const platform = getPlatformFromLink(this);
-            const asset = getAssetForPlatform(platform);
-
-            if (asset) {
-                window.location.href = asset.url;
-            } else {
-                alert('Download indisponível no momento. Verifique em GitHub: github.com/marcelo-gm/spec-architect/releases');
+function initializeLatestRelease() {
+    fetch(`https://api.github.com/repos/${RELEASE_REPO}/releases/latest`)
+        .then(res => (res.ok ? res.json() : Promise.reject(res.status)))
+        .then(release => {
+            const version = document.getElementById('dl-version');
+            if (version && release.tag_name) {
+                const date = release.published_at ? new Date(release.published_at).toLocaleDateString('pt-BR') : '';
+                version.textContent = `Versão ${release.tag_name}${date ? ` · publicada em ${date}` : ''}`;
+                version.hidden = false;
             }
-        });
-    });
-}
-
-/**
- * Detect the platform from the download link text
- */
-function getPlatformFromLink(element) {
-    const text = element.textContent.toLowerCase();
-
-    if (text.includes('.deb')) return 'linux-deb';
-    if (text.includes('appimage')) return 'linux-appimage';
-    if (text.includes('.msi')) return 'windows-msi';
-    if (text.includes('.exe')) return 'windows-exe';
-
-    return null;
-}
-
-/**
- * Get the download URL for a specific platform
- * This would normally come from an API, but we provide a fallback
- */
-function getAssetForPlatform(platform) {
-    const releases = {
-        'linux-deb': {
-            url: `${GITHUB_RELEASE_BASE}/v0.1.0/spec-architect_0.1.0_amd64.deb`,
-            name: 'spec-architect_0.1.0_amd64.deb'
-        },
-        'linux-appimage': {
-            url: `${GITHUB_RELEASE_BASE}/v0.1.0/spec-architect_0.1.0_x64.AppImage`,
-            name: 'spec-architect_0.1.0_x64.AppImage'
-        },
-        'windows-msi': {
-            url: `${GITHUB_RELEASE_BASE}/v0.1.0/spec-architect_0.1.0_x64_en-US.msi`,
-            name: 'spec-architect_0.1.0_x64_en-US.msi'
-        },
-        'windows-exe': {
-            url: `${GITHUB_RELEASE_BASE}/v0.1.0/spec-architect_0.1.0_x64.exe`,
-            name: 'spec-architect_0.1.0_x64.exe'
-        }
-    };
-
-    return releases[platform] || null;
+            const sizes = {};
+            (release.assets || []).forEach(a => { sizes[a.name] = a.size; });
+            document.querySelectorAll('[data-asset]').forEach(link => {
+                const size = sizes[link.dataset.asset];
+                const meta = link.querySelector('.dl-meta');
+                if (size && meta) meta.textContent = `${meta.textContent} · ${(size / 1048576).toFixed(1)} MB`;
+            });
+        })
+        .catch(() => {});
 }
 
 /**
@@ -141,7 +105,7 @@ function trackEvent(eventName, eventData = {}) {
 // Track when users click download buttons
 document.addEventListener('click', function(e) {
     if (e.target.closest('.download-link')) {
-        const platform = getPlatformFromLink(e.target);
-        trackEvent('download_click', { platform });
+        const link = e.target.closest('.download-link');
+        trackEvent('download_click', { asset: link.dataset.asset || link.textContent.trim() });
     }
 });
