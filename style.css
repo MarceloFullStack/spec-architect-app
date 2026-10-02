@@ -1532,6 +1532,35 @@ body {
     height: auto;
 }
 
+/* Measured numbers */
+.perf-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 860px;
+    margin: 0 auto 2.5rem;
+}
+
+.perf-stats div {
+    text-align: center;
+    padding: 1.1rem 0.75rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    background: var(--bg-surface);
+}
+
+.perf-stats strong {
+    display: block;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: var(--accent-cyan);
+    letter-spacing: -0.02em;
+}
+
+.perf-stats span {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
 /* ---- Mobile ---------------------------------------------------------------- */
 
 @media (max-width: 1400px) {
@@ -1673,5 +1702,8 @@ body {
     }
     .support-card {
         padding: 1.25rem;
+    }
+    .perf-stats {
+        grid-template-columns: 1fr;
     }
 }

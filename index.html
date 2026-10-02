@@ -96,6 +96,7 @@
                         <button type="button" role="tab" data-view="board" class="on">Quadro</button>
                         <button type="button" role="tab" data-view="change">Mudança</button>
                         <button type="button" role="tab" data-view="spec">Requisitos</button>
+                        <button type="button" role="tab" data-view="verify">Verificação</button>
                         <button type="button" role="tab" data-view="history">Histórico</button>
                     </div>
                     <div class="screens-theme" role="group">
@@ -304,6 +305,12 @@
                 </p>
             </div>
 
+            <div class="perf-stats">
+                <div><strong>27 MB</strong><span>Instalador Windows</span></div>
+                <div><strong>~90 MB</strong><span>Memória do núcleo em Rust</span></div>
+                <div><strong>0</strong><span>Runtimes para instalar</span></div>
+            </div>
+
             <div class="features-grid">
                 <div class="feat-card">
                     <div class="feat-tag">Zero-Config</div>
@@ -313,7 +320,7 @@
                 <div class="feat-card">
                     <div class="feat-tag">Performance</div>
                     <h3>Tauri v2 + Rust Core</h3>
-                    <p>Interface desktop ultra-leve com consumo inferior a 90MB de RAM. Resposta em tempo real sem o peso e a lentidão de aplicativos baseados em Electron.</p>
+                    <p>Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: o instalador do Windows tem 27 MB.</p>
                 </div>
                 <div class="feat-card">
                     <div class="feat-tag">Imunidade</div>

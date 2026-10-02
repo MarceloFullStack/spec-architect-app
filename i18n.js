@@ -417,9 +417,9 @@ const I18N_DATA = {
    "性能"
   ],
   [
-   "Interface desktop ultra-leve com consumo inferior a 90MB de RAM. Resposta em tempo real sem o peso e a lentidão de aplicativos baseados em Electron.",
-   "Ultra-light desktop interface using under 90MB of RAM. Real-time response without the weight and slowness of Electron-based apps.",
-   "超轻量桌面界面，内存占用低于 90MB。实时响应，没有 Electron 应用的臃肿与迟缓。"
+   "Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: o instalador do Windows tem 27 MB.",
+   "Rust core using about 90 MB of memory. The interface uses the system's own web view instead of bundling a whole Chromium like Electron apps: the Windows installer is 27 MB.",
+   "Rust 核心约占 90 MB 内存。界面使用系统自带的 WebView，而不像 Electron 应用那样内置整个 Chromium：Windows 安装包仅 27 MB。"
   ],
   [
    "Imunidade",
@@ -710,6 +710,26 @@ const I18N_DATA = {
    "Histórico",
    "History",
    "历史"
+  ],
+  [
+   "Verificação",
+   "Verification",
+   "验证"
+  ],
+  [
+   "Instalador Windows",
+   "Windows installer",
+   "Windows 安装包"
+  ],
+  [
+   "Memória do núcleo em Rust",
+   "Rust core memory",
+   "Rust 核心内存"
+  ],
+  [
+   "Runtimes para instalar",
+   "Runtimes to install",
+   "需要安装的运行时"
   ]
  ],
  "strings": {
@@ -762,6 +782,11 @@ const I18N_DATA = {
    "Spec Architect: histórico das mudanças arquivadas, com data e áreas de requisitos afetadas",
    "Spec Architect: history of archived changes, with date and affected requirement areas",
    "Spec Architect：已归档变更的历史，包含日期与受影响的需求领域"
+  ],
+  "screens_alt_verify": [
+   "Spec Architect: relatório do agente verificando a implementação contra a especificação",
+   "Spec Architect: agent report verifying the implementation against the specification",
+   "Spec Architect：智能体对照规格验证实现的报告"
   ]
  }
 };
