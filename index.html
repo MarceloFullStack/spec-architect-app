@@ -361,7 +361,7 @@
                     <span class="step-num">ETAPA 03</span>
                     <h3 class="step-title">Handoff de Agentes</h3>
                     <p class="step-desc">
-                        Despache tarefas estruturadas diretamente para Claude Code, Cursor, Codex ou Gemini CLI com contexto isolado, sem poluir a memória do modelo.
+                        Despache tarefas estruturadas diretamente para Claude Code, Codex, Cursor Agent, Kiro ou Antigravity com contexto isolado, sem poluir a memória do modelo.
                     </p>
                 </div>
                 <div class="pipeline-step">
@@ -403,7 +403,7 @@
                 <div class="feat-card">
                     <div class="feat-tag">Orquestração</div>
                     <h3>Compatibilidade Multi-Agent</h3>
-                    <p>Suporte de primeira classe para Claude Code, Cursor, Gemini CLI, Kiro e Antigravity com detecção automática de ambiente e histórico isolado.</p>
+                    <p>Suporte de primeira classe para Claude Code, Codex, Cursor Agent, Kiro e Antigravity com detecção automática de ambiente e histórico isolado.</p>
                 </div>
                 <div class="feat-card">
                     <div class="feat-tag">Privacidade</div>
@@ -428,6 +428,22 @@
                         Binários autocontidos com verificação criptográfica SHA-256 incluída.
                     </p>
                     <p class="section-desc dl-version" id="dl-version" hidden></p>
+                </div>
+
+                <div class="dl-requirements">
+                    <div class="dl-req-head">
+                        <span class="dl-req-tag">Pré-requisito</span>
+                        <strong>Tenha pelo menos uma CLI de agente de IA instalada e logada</strong>
+                    </div>
+                    <p>O Spec Architect organiza as especificações e entrega as tarefas a um agente de IA — quem escreve o código é o agente, rodando no console do app. Instale um destes antes de usar:</p>
+                    <ul class="dl-req-list">
+                        <li><span>Claude Code</span><code>claude</code></li>
+                        <li><span>Codex</span><code>codex</code></li>
+                        <li><span>Cursor Agent</span><code>cursor-agent</code></li>
+                        <li><span>Kiro</span><code>kiro-cli</code></li>
+                        <li><span>Antigravity</span><code>agy</code></li>
+                    </ul>
+                    <p class="dl-req-foot">Node.js e a CLI do OpenSpec <strong>não</strong> são necessários: já vêm dentro do app. Git é opcional (habilita o painel de alterações).</p>
                 </div>
 
                 <div class="download-cards">
@@ -456,7 +472,7 @@
                             <span class="dl-os">🪟 Windows</span>
                             <span class="dl-badge">Disponível</span>
                         </div>
-                        <p class="dl-desc">Windows 10 e Windows 11 x64. Instale sem precisar de administrador, ou use a versão portátil: extraia e execute.</p>
+                        <p class="dl-desc">Windows 10 e 11 (64 bits). Instale sem precisar de administrador, ou use a versão portátil: extraia e execute.</p>
                         <div class="dl-actions">
                             <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/latest/download/spec-architect_x64-setup.exe" class="dl-btn primary" data-asset="spec-architect_x64-setup.exe">
                                 <span>Baixar Instalador .exe</span>

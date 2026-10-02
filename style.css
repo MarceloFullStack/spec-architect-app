@@ -1133,3 +1133,186 @@ body {
     color: inherit;
     text-decoration: underline;
 }
+
+/* Pré-requisito: CLI de agente */
+.dl-requirements {
+    max-width: 860px; /* same as .download-cards */
+    margin: 0 auto 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    background: rgba(251, 191, 36, 0.06);
+    border-radius: var(--radius-md);
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.dl-req-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.dl-req-tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.45);
+}
+
+.dl-req-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.8rem 0;
+    padding: 0;
+}
+
+.dl-req-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-subtle);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+}
+
+.dl-req-list code {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.dl-req-foot {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* ---- Mobile ---------------------------------------------------------------- */
+
+@media (max-width: 860px) {
+    /* Links go to a swipeable row under the brand instead of widening the page */
+    .navbar {
+        flex-wrap: wrap;
+        row-gap: 0.6rem;
+        padding: 0.75rem 1rem;
+    }
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        gap: 1.25rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px;
+    }
+    .navbar-links::-webkit-scrollbar {
+        display: none;
+    }
+    .navbar-links a {
+        font-size: 0.85rem;
+    }
+    .kanban-board {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Only the sides: .section/.hero keep their own vertical spacing */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .section,
+    .download-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .manifesto-section {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+    .section-header {
+        margin-bottom: 2.25rem;
+    }
+    .brand-badge,
+    .navbar-cta .btn-nav {
+        display: none;
+    }
+    .hero {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    .pill-announcement {
+        font-size: 0.66rem;
+        padding: 0.35rem 0.8rem;
+        max-width: 100%;
+        text-align: center;
+        line-height: 1.4;
+    }
+    .hero h1 {
+        font-size: clamp(1.85rem, 8.6vw, 2.4rem);
+        letter-spacing: -0.03em;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-actions > a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-meta {
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+    }
+    .section-title {
+        font-size: clamp(1.55rem, 7vw, 2rem);
+        overflow-wrap: break-word;
+    }
+    .window-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .manifesto-card {
+        padding: 2rem 1.25rem;
+    }
+    .dl-card {
+        padding: 1.25rem;
+    }
+    .dl-btn {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+    .dl-requirements {
+        padding: 1rem;
+    }
+    .quick-install {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    .code-snippet {
+        white-space: normal;
+        word-break: break-all;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+    }
+}
+
