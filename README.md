@@ -1,28 +1,29 @@
 # Spec Architect Community Edition
 
-**The Visual GUI for OpenSpec** — Free Forever
+**Visual Desktop GUI para Spec-Driven Development (SDD)** — Gratuito para Sempre
 
-Spec Architect is a desktop application for OpenSpec, the spec-driven development workflow for AI coding agents like Claude Code, Cursor, and others.
+Spec Architect é uma aplicação desktop de alta performance para **Spec-Driven Development (SDD)**, o método de desenvolvimento orientado por especificações estruturadas para agentes de IA como Claude Code, Cursor, Gemini CLI e outros.
+
+Com motor integrado e **zero dependências externas**, o Spec Architect funciona diretamente da caixa, sem exigir que o usuário tenha runtimes ou ferramentas de terceiros instaladas na máquina.
 
 ## Download
 
-- **Linux:** [.deb](releases), [.AppImage](releases)
-- **Windows:** [.msi](releases), [.exe](releases)
+- **Linux:** [.deb](https://github.com/MarceloFullStack/spec-architect-app/releases/tag/v0.1.0), [.AppImage](https://github.com/MarceloFullStack/spec-architect-app/releases/tag/v0.1.0)
+- **Windows:** [.msi](https://github.com/MarceloFullStack/spec-architect-app/releases/tag/v0.1.0), [.exe](https://github.com/MarceloFullStack/spec-architect-app/releases/tag/v0.1.0)
 
-[View Landing Page](landing-page/index.html)
+🌐 [Acessar Página Oficial](https://marcelofullstack.github.io/spec-architect-app/)
 
-## About
+## Sobre o Projeto
 
-Spec Architect Community Edition is **100% free** with no limits, no login required, and no restrictions.
+Spec Architect Community Edition é **100% gratuito**, sem limites de uso, sem cadastro obrigatório e sem restrições.
 
-- 🚀 **Free Forever** — Community Edition with all features included
-- 📖 **Visual GUI** — Spec-driven development made easy
-- 🤖 **AI-Ready** — Works with Claude Code, Cursor, Gemini CLI, and more
+- 🚀 **Gratuito para Sempre** — Versão Comunitária com todos os recursos liberados
+- 📖 **GUI Visual para SDD** — Especificações, propostas e tarefas em painéis intuitivos
+- 🤖 **Pronto para Agentes de IA** — Integração nativa com Claude Code, Cursor, Gemini CLI e mais
+- ⚡ **Zero Dependências** — Motor SDD embutido no binário, imune a quebras externas
 
-**Creator:** Marcelo Guimarães
+**Autor & Criador:** Marcelo Guimarães
 
-## License
+## Licenciamento e Distribuição
 
-This is the Community Edition of Spec Architect. All source code is private. Only compiled binaries and the public landing page are distributed here.
-
-For more information, visit the [landing page](landing-page/index.html).
+Esta é a Edição Comunitária oficial do Spec Architect. O código-fonte permanece privado; apenas os binários compilados e a vitrine pública são distribuídos neste repositório.
