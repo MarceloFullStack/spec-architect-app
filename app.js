@@ -10,6 +10,7 @@ const RELEASE_REPO = 'MarceloFullStack/spec-architect-app';
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeLatestRelease();
+    initializeSupport();
     initializeTheme();
 });
 
@@ -65,6 +66,30 @@ function initializeLatestRelease() {
             });
         })
         .catch(() => {});
+}
+
+/**
+ * Star count (public API, optional) and the Pix "copy" button.
+ */
+function initializeSupport() {
+    fetch(`https://api.github.com/repos/${RELEASE_REPO}`)
+        .then(res => (res.ok ? res.json() : Promise.reject(res.status)))
+        .then(repo => {
+            const count = document.getElementById('star-count');
+            if (count && typeof repo.stargazers_count === 'number' && repo.stargazers_count > 0) {
+                count.textContent = repo.stargazers_count.toLocaleString('pt-BR');
+                count.hidden = false;
+            }
+        })
+        .catch(() => {});
+
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const text = document.getElementById(btn.dataset.copy)?.textContent.trim() || '';
+            const done = () => { btn.innerText = 'Copiado!'; setTimeout(() => (btn.innerText = 'Copiar'), 2000); };
+            if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, () => {});
+        });
+    });
 }
 
 /**
