@@ -1336,6 +1336,42 @@ body {
     word-break: break-all;
 }
 
+/* OpenSpec positioning and footer notes */
+.hero-openspec {
+    max-width: 720px;
+    margin: -0.25rem auto 1.25rem;
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    color: var(--text-primary);
+    line-height: 1.55;
+}
+
+.hero-openspec code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+    background: rgba(0, 242, 254, 0.08);
+    color: var(--accent-cyan);
+}
+
+.footer-edition {
+    margin-top: 0.35rem;
+    font-size: 0.82rem;
+    color: var(--accent-emerald);
+}
+
+.footer-note {
+    margin-top: 0.35rem;
+    max-width: 520px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.footer-note a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 /* ---- Mobile ---------------------------------------------------------------- */
 
 @media (max-width: 860px) {
