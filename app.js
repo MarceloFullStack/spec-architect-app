@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeLatestRelease();
     initializeSupport();
+    initializeScreens();
     initializeTheme();
 });
 
@@ -67,6 +68,28 @@ function initializeLatestRelease() {
             });
         })
         .catch(() => {});
+}
+
+/**
+ * App screenshots: the language follows the site; view and theme are picked.
+ */
+function initializeScreens() {
+    const img = document.getElementById('screens-img');
+    if (!img) return;
+    const lang = ['pt', 'en', 'zh'].includes(window.siteLang) ? window.siteLang : 'pt';
+    const state = { view: 'board', theme: 'dark' };
+    const show = () => {
+        img.src = `assets/screens/${state.theme}-${lang}-${state.view}.webp`;
+        img.alt = t('screens_alt_' + state.view);
+        document.querySelectorAll('[data-view]').forEach(b => {
+            b.classList.toggle('on', b.dataset.view === state.view);
+            b.setAttribute('aria-selected', b.dataset.view === state.view ? 'true' : 'false');
+        });
+        document.querySelectorAll('.screens-theme [data-theme]').forEach(b => b.classList.toggle('on', b.dataset.theme === state.theme));
+    };
+    document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => { state.view = b.dataset.view; show(); }));
+    document.querySelectorAll('.screens-theme [data-theme]').forEach(b => b.addEventListener('click', () => { state.theme = b.dataset.theme; show(); }));
+    show();
 }
 
 /**

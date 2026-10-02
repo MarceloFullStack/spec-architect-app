@@ -1473,6 +1473,65 @@ body {
     color: var(--text-primary);
 }
 
+/* Real app screens */
+.screens {
+    max-width: 1120px;
+    margin: 3rem auto 0;
+}
+
+.screens-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+}
+
+.screens-tabs,
+.screens-theme {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.screens-bar button {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.screens-bar button:hover {
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+
+.screens-bar button.on {
+    background: rgba(99, 102, 241, 0.18);
+    border-color: var(--border-accent);
+    color: var(--text-primary);
+}
+
+.screens-frame {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.7), var(--glow-indigo);
+    background: var(--bg-surface);
+}
+
+.screens-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* ---- Mobile ---------------------------------------------------------------- */
 
 @media (max-width: 1400px) {

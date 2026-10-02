@@ -675,6 +675,36 @@ const I18N_DATA = {
    "Sem instalar",
    "No install",
    "免安装"
+  ],
+  [
+   "Início",
+   "Home",
+   "首页"
+  ],
+  [
+   "Quadro",
+   "Board",
+   "看板"
+  ],
+  [
+   "Mudança",
+   "Change",
+   "变更"
+  ],
+  [
+   "Requisitos",
+   "Requirements",
+   "需求"
+  ],
+  [
+   "☾ Escuro",
+   "☾ Dark",
+   "☾ 深色"
+  ],
+  [
+   "☀ Claro",
+   "☀ Light",
+   "☀ 浅色"
   ]
  ],
  "strings": {
@@ -702,6 +732,26 @@ const I18N_DATA = {
    "Spec Architect é a interface visual compatível com OpenSpec: abra qualquer projeto openspec/ e conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Community Edition gratuita para Windows e Linux.",
    "Spec Architect is the OpenSpec-compatible visual interface: open any openspec/ project and guide Claude Code, Codex and other AI agents through proposal, specification, tasks and archiving. Free Community Edition for Windows and Linux.",
    "Spec Architect 是兼容 OpenSpec 的可视化界面：打开任意 openspec/ 项目，引导 Claude Code、Codex 等 AI 智能体完成提案、规格、任务与归档。免费 Community Edition，支持 Windows 与 Linux。"
+  ],
+  "screens_alt_home": [
+   "Spec Architect: tela inicial do projeto com as mudanças e o atalho para planejar com um agente",
+   "Spec Architect: project home with the changes and a shortcut to plan with an agent",
+   "Spec Architect：项目首页，显示变更并可一键与智能体规划"
+  ],
+  "screens_alt_board": [
+   "Spec Architect: quadro de mudanças com o progresso das tarefas de cada change",
+   "Spec Architect: changes board with each change's task progress",
+   "Spec Architect：变更看板，显示每个变更的任务进度"
+  ],
+  "screens_alt_change": [
+   "Spec Architect: detalhe de uma mudança com documentos, tarefas e ações do agente",
+   "Spec Architect: change detail with documents, tasks and agent actions",
+   "Spec Architect：变更详情，包含文档、任务与智能体操作"
+  ],
+  "screens_alt_spec": [
+   "Spec Architect: requisitos do projeto com cenários formatados",
+   "Spec Architect: project requirements with formatted scenarios",
+   "Spec Architect：项目需求及格式化的场景"
   ]
  }
 };

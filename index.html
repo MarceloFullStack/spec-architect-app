@@ -88,118 +88,22 @@
                 <span>🛡️ Motor Isolado em Sandbox</span>
             </div>
 
-            <!-- Interface Blueprint Preview -->
-            <div class="mockup-wrapper">
-                <div class="mockup-glow"></div>
-                <div class="app-window">
-                    <div class="window-header">
-                        <div class="window-controls">
-                            <span class="control-dot red"></span>
-                            <span class="control-dot yellow"></span>
-                            <span class="control-dot green"></span>
-                        </div>
-                        <div class="window-title">spec-architect // workspace: core-engine / change: ledger-concurrency</div>
-                        <div class="window-actions">
-                            <span class="status-badge">● SDD Engine Active</span>
-                        </div>
+            <!-- Real app screens: language follows the site, theme and view are picked here -->
+            <div class="screens" id="screens">
+                <div class="screens-bar">
+                    <div class="screens-tabs" role="tablist">
+                        <button type="button" role="tab" data-view="home">Início</button>
+                        <button type="button" role="tab" data-view="board" class="on">Quadro</button>
+                        <button type="button" role="tab" data-view="change">Mudança</button>
+                        <button type="button" role="tab" data-view="spec">Requisitos</button>
                     </div>
-                    <div class="window-body">
-                        <!-- Sidebar -->
-                        <div class="window-sidebar">
-                            <div class="sidebar-heading">Especificações Vivas (Specs)</div>
-                            <div class="tree-item">📄 auth-tokens.spec.md</div>
-                            <div class="tree-item">📄 tenant-isolation.spec.md</div>
-                            <div class="tree-item active">📄 ledger-lock.spec.md</div>
-                            <div class="tree-item">📄 event-stream.spec.md</div>
-                            
-                            <div class="sidebar-heading" style="margin-top: 1.5rem;">Mudanças Ativas</div>
-                            <div class="tree-item active">📦 2026-10-ledger-concurrency</div>
-                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">├ proposal.md</div>
-                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">├ design.md</div>
-                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">└ tasks.md</div>
-                        </div>
-                        
-                        <!-- Main Kanban View -->
-                        <div class="window-main">
-                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
-                                <div>
-                                    <h4 style="font-size: 1rem; font-weight: 600;">Fluxo da Mudança: Concorrência de Ledger</h4>
-                                    <p style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">Contrato: 4 invariantes • 8 tarefas atômicas</p>
-                                </div>
-                                <span class="status-badge" style="background: rgba(99,102,241,0.1); color: #a5b4fc; border-color: rgba(99,102,241,0.3);">
-                                    Agent Handoff Ready
-                                </span>
-                            </div>
-
-                            <div class="kanban-board">
-                                <div class="kanban-col">
-                                    <div class="col-header">
-                                        <span>Proposto</span>
-                                        <span class="col-count">2</span>
-                                    </div>
-                                    <div class="spec-card">
-                                        <div class="spec-card-tag">SPEC-DELTA</div>
-                                        <div class="spec-card-title">Definir trava otimista em transferências</div>
-                                        <div class="spec-card-meta">
-                                            <span>#task-01</span>
-                                            <span>spec/ledger</span>
-                                        </div>
-                                    </div>
-                                    <div class="spec-card">
-                                        <div class="spec-card-tag">SCHEMA</div>
-                                        <div class="spec-card-title">Adicionar coluna version e hash de bloco</div>
-                                        <div class="spec-card-meta">
-                                            <span>#task-02</span>
-                                            <span>db/migration</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="kanban-col">
-                                    <div class="col-header">
-                                        <span>Em Execução</span>
-                                        <span class="col-count">1</span>
-                                    </div>
-                                    <div class="spec-card" style="border-color: rgba(0, 242, 254, 0.4); box-shadow: 0 0 12px rgba(0, 242, 254, 0.1);">
-                                        <div class="spec-card-tag" style="color: var(--accent-cyan);">AGENTE ATIVO</div>
-                                        <div class="spec-card-title">Implementar retry com backoff exponencial</div>
-                                        <div class="spec-card-meta">
-                                            <span class="agent-avatar">🤖 Claude Code</span>
-                                            <span style="color: var(--accent-cyan);">75%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="kanban-col">
-                                    <div class="col-header">
-                                        <span>Verificado</span>
-                                        <span class="col-count">5</span>
-                                    </div>
-                                    <div class="spec-card">
-                                        <div class="spec-card-tag" style="color: var(--accent-emerald);">AUDITADO</div>
-                                        <div class="spec-card-title">Testes de estresse com 10k transações/s</div>
-                                        <div class="spec-card-meta">
-                                            <span style="color: var(--accent-emerald);">✓ Passou</span>
-                                            <span>32 assertions</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Telemetry / Agent Terminal -->
-                        <div class="window-terminal">
-                            <div class="sidebar-heading">Telemetria de Execução</div>
-                            <div class="terminal-line cmd">$ sdd-agent handoff --target claude</div>
-                            <div class="terminal-line info">[03:14:02] Carregando invariantes de ledger-lock...</div>
-                            <div class="terminal-line info">[03:14:03] Contrato auditado: 4 regras invioláveis.</div>
-                            <div class="terminal-line ai">[03:14:08] Agente Claude Code analisando tarefas...</div>
-                            <div class="terminal-line ai">[03:14:15] Editando src/ledger/concurrency.rs</div>
-                            <div class="terminal-line success">[03:14:22] cargo test --lib: 18 passed</div>
-                            <div class="terminal-line success">[03:14:26] ✓ Invariante #3 respeitada</div>
-                            <div class="terminal-line cmd" style="margin-top: 1rem;">$ pronto para verificação final_</div>
-                        </div>
+                    <div class="screens-theme" role="group">
+                        <button type="button" data-theme="dark" class="on">☾ Escuro</button>
+                        <button type="button" data-theme="light">☀ Claro</button>
                     </div>
+                </div>
+                <div class="screens-frame">
+                    <img id="screens-img" src="assets/screens/dark-pt-board.webp" width="1600" height="1000" alt="Spec Architect: quadro de mudanças com o progresso das tarefas de cada change">
                 </div>
             </div>
         </section>
