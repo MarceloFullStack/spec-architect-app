@@ -4,7 +4,7 @@
  */
 
 // Configuration
-const GITHUB_RELEASE_BASE = 'https://github.com/marcelo-gm/spec-architect/releases/download';
+const GITHUB_RELEASE_BASE = 'https://github.com/MarceloFullStack/spec-architect-app/releases/download';
 
 // Initialize the app when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
