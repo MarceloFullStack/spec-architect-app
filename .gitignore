@@ -1,0 +1,8 @@
+*.deb
+*.AppImage
+*.msi
+*.exe
+*.zip
+*.tar.gz
+.DS_Store
+*.log
