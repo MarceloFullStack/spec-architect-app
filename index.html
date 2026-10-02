@@ -513,30 +513,36 @@
 
         <!-- Author & support -->
         <section class="support-section" id="apoie">
-            <div class="container support-grid">
-                <div class="support-card">
-                    <span class="support-tag">Autor &amp; Criador</span>
-                    <h3 class="support-name">Marcelo Guimarães</h3>
-                    <p class="support-role">Programador Sênior Full Stack</p>
-                    <p>Raízes sólidas na engenharia de software, explorando arquitetura de sistemas, inteligência artificial e computação de alta performance em Rust. Experiência acima de ferramentas.</p>
-                    <ul class="support-chips">
-                        <li>ADS</li>
-                        <li>Gestão Comercial</li>
-                        <li>Pós IA / ML</li>
-                        <li>Rust &amp; WGPU</li>
-                    </ul>
+            <div class="container support-wrap">
+                <div class="support-author">
+                    <div class="support-author-head">
+                        <span class="support-tag">Autor &amp; Criador</span>
+                        <h3 class="support-name">Marcelo Guimarães</h3>
+                        <p class="support-role">Programador Sênior Full Stack</p>
+                    </div>
+                    <div class="support-author-body">
+                        <p>Raízes sólidas na engenharia de software, explorando arquitetura de sistemas, inteligência artificial e computação de alta performance em Rust. Experiência acima de ferramentas.</p>
+                        <ul class="support-chips">
+                            <li>ADS</li>
+                            <li>Gestão Comercial</li>
+                            <li>Pós IA / ML</li>
+                            <li>Rust &amp; WGPU</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="support-card support-card-accent">
-                    <span class="support-tag">Apoie o projeto</span>
-                    <h3 class="support-name">Gostou? Deixe uma estrela no GitHub</h3>
-                    <p>É grátis, leva um clique e é o que mais ajuda o Spec Architect a chegar a mais gente.</p>
-                    <a class="support-star" href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank" rel="noopener">
-                        <span>⭐ Dar estrela no GitHub</span>
-                        <span class="support-star-count" id="star-count" hidden></span>
-                    </a>
+                    <div class="support-col">
+                        <span class="support-tag">Apoie o projeto</span>
+                        <h3 class="support-name">Gostou? Deixe uma estrela no GitHub</h3>
+                        <p>É grátis, leva um clique e é o que mais ajuda o Spec Architect a chegar a mais gente.</p>
+                        <a class="support-star" href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank" rel="noopener">
+                            <span>⭐ Dar estrela no GitHub</span>
+                            <span class="support-star-count" id="star-count" hidden></span>
+                        </a>
+                    </div>
 
-                    <div class="support-pix">
+                    <div class="support-col support-pix">
                         <p class="support-pix-title">☕ Café dos finais de semana <span>100% voluntário</span></p>
                         <p>O Spec Architect é um projeto livre e independente, feito nos finais de semana. Se ele te ajuda e você quiser apoiar a continuidade, um Pix de qualquer valor mantém o café quente nos sábados e domingos de código.</p>
                         <div class="support-pix-key">
@@ -553,18 +559,22 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="container footer-inner">
-                <div>
-                    <div class="footer-brand">Spec Architect</div>
-                    <div class="footer-copy">The Visual Control Plane for Spec-Driven Development (SDD)</div>
-                    <div class="footer-edition">Spec Architect Community Edition — Free Forever</div>
-                    <div style="font-size: 0.78rem; margin-top: 0.35rem; color: var(--text-muted);">Marcelo Guimarães — Autor &amp; Criador do Spec Architect</div>
-                    <div class="footer-note">Projeto independente, sem vínculo com a Fission AI. <a href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener">OpenSpec</a> é um projeto de código aberto (licença MIT) da Fission AI.</div>
-                </div>
-                <div class="footer-links">
+            <div class="container">
+                <div class="footer-top">
+                    <div>
+                        <div class="footer-brand">Spec Architect</div>
+                        <div class="footer-copy">The Visual Control Plane for Spec-Driven Development (SDD)</div>
+                    </div>
+                    <div class="footer-links">
                     <a href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank">Repositório</a>
                     <a href="https://github.com/MarceloFullStack/spec-architect-app/releases" target="_blank">Releases</a>
                     <a href="https://github.com/MarceloFullStack/spec-architect-app/blob/master/README.md" target="_blank">Documentação</a>
+                </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-edition">Spec Architect Community Edition — Free Forever</div>
+                    <div class="footer-author">Marcelo Guimarães — Autor &amp; Criador do Spec Architect</div>
+                    <div class="footer-note">Projeto independente, sem vínculo com a Fission AI. <a href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener">OpenSpec</a> é um projeto de código aberto (licença MIT) da Fission AI.</div>
                 </div>
             </div>
         </footer>

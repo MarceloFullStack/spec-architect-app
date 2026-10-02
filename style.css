@@ -76,12 +76,23 @@ body {
 }
 
 .navbar {
-    max-width: 1240px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0.9rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
+}
+
+/* Menu items never wrap or get squeezed; the layout switches instead (see the media queries) */
+.navbar-brand,
+.navbar-cta,
+.navbar-links a,
+.navbar-cta > a,
+.lang-switch button {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .navbar-brand {
@@ -130,7 +141,7 @@ body {
 .navbar-links {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .navbar-links a {
@@ -1205,12 +1216,45 @@ body {
     padding: 2rem 0 5rem;
 }
 
-.support-grid {
+/* Author strip on top, one support card (star | Pix) below */
+.support-wrap {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.support-author {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.support-author .support-role {
+    margin-bottom: 0;
+}
+
+.support-author .support-chips {
+    margin-top: 0.75rem;
+}
+
+.support-card.support-card-accent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    max-width: 920px;
-    align-items: start;
+    gap: 2rem;
+}
+
+.support-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .support-card {
@@ -1269,7 +1313,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 0 1.5rem;
+    margin: auto 0 0;
     padding: 0.75rem 1rem;
     border-radius: var(--radius-sm);
     background: rgba(99, 102, 241, 0.15);
@@ -1291,8 +1335,12 @@ body {
 }
 
 .support-pix {
-    border-top: 1px solid var(--border-subtle);
-    padding-top: 1.25rem;
+    border-left: 1px solid var(--border-subtle);
+    padding-left: 2rem;
+}
+
+.support-col > p {
+    margin-bottom: 1rem;
 }
 
 .support-pix-title {
@@ -1316,7 +1364,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
-    margin-top: 0.9rem;
+    margin-top: auto;
     padding: 0.7rem 0.9rem;
     border-radius: var(--radius-sm);
     background: #05070a;
@@ -1354,17 +1402,34 @@ body {
     color: var(--accent-cyan);
 }
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
 .footer-edition {
-    margin-top: 0.35rem;
-    font-size: 0.82rem;
     color: var(--accent-emerald);
 }
 
 .footer-note {
-    margin-top: 0.35rem;
-    max-width: 520px;
+    flex-basis: 100%;
     font-size: 0.72rem;
-    color: var(--text-muted);
 }
 
 .footer-note a {
@@ -1410,7 +1475,13 @@ body {
 
 /* ---- Mobile ---------------------------------------------------------------- */
 
-@media (max-width: 860px) {
+@media (max-width: 1400px) {
+    .brand-badge {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
     /* Links go to a swipeable row under the brand instead of widening the page */
     .navbar {
         flex-wrap: wrap;
@@ -1433,11 +1504,25 @@ body {
     .navbar-links a {
         font-size: 0.85rem;
     }
+}
+
+@media (max-width: 860px) {
     .kanban-board {
         grid-template-columns: 1fr;
     }
-    .support-grid {
+    .support-author,
+    .support-card.support-card-accent {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .support-pix {
+        border-left: 0;
+        padding-left: 0;
+        border-top: 1px solid var(--border-subtle);
+        padding-top: 1.25rem;
+    }
+    .support-star {
+        margin-top: 0.5rem;
     }
 }
 
