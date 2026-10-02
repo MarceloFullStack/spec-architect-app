@@ -705,6 +705,11 @@ const I18N_DATA = {
    "☀ Claro",
    "☀ Light",
    "☀ 浅色"
+  ],
+  [
+   "Histórico",
+   "History",
+   "历史"
   ]
  ],
  "strings": {
@@ -752,6 +757,11 @@ const I18N_DATA = {
    "Spec Architect: requisitos do projeto com cenários formatados",
    "Spec Architect: project requirements with formatted scenarios",
    "Spec Architect：项目需求及格式化的场景"
+  ],
+  "screens_alt_history": [
+   "Spec Architect: histórico das mudanças arquivadas, com data e áreas de requisitos afetadas",
+   "Spec Architect: history of archived changes, with date and affected requirement areas",
+   "Spec Architect：已归档变更的历史，包含日期与受影响的需求领域"
   ]
  }
 };
