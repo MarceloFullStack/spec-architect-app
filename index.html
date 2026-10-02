@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spec Architect — The Visual Control Plane for Spec-Driven Development (SDD)</title>
-    <meta name="description" content="Spec Architect é o plano de controle visual para desenvolvimento orientado por especificações (SDD) com agentes de IA. Chega de vibecoding: defina arquitetura, requisitos e contratos vivos.">
-    <meta name="keywords" content="Spec-Driven Development, SDD, Engenharia de Software, Arquitetura de Software, Claude Code, Cursor, Agentes de IA, Tauri v2, Rust">
+    <meta name="description" content="Na era do Vibe Coding, o verdadeiro superpoder é dominar o Desenvolvimento Orientado a Especificações. Transforme o caos de prompts em engenharia previsível.">
+    <meta name="keywords" content="Spec-Driven Development, SDD, Vibe Coding, Engenharia de Software, Arquitetura de Software, Claude Code, Cursor, Agentes de IA, Tauri v2, Rust">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,11 @@
             <a href="#" class="navbar-brand">
                 <span class="brand-icon">◇</span>
                 <span class="brand-name">Spec Architect</span>
-                <span class="brand-badge">SDD Engine</span>
+                <span class="brand-badge">SDD Control Plane</span>
             </a>
             <div class="navbar-links">
-                <a href="#paradigma">O Paradigma SDD</a>
+                <a href="#o-que-resolve">O Que Resolve</a>
+                <a href="#paradigma">Vibe Coding vs SDD</a>
                 <a href="#pipeline">Pipeline</a>
                 <a href="#engenharia">Arquitetura</a>
                 <a href="#download">Download</a>
@@ -31,7 +32,7 @@
                     <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
                     GitHub
                 </a>
-                <a href="#download" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Baixar Binário</a>
+                <a href="#download" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Instalar App</a>
             </div>
         </nav>
     </header>
@@ -41,33 +42,33 @@
         <section class="hero container">
             <div class="pill-announcement">
                 <span class="pill-dot"></span>
-                SPEC-DRIVEN DEVELOPMENT • NATIVE CONTROL PLANE
+                SPEC-DRIVEN DEVELOPMENT • O SUPERPODER HUMANO NA ERA DA IA
             </div>
             
             <h1>
-                Chega de Vibecoding no Escuro.<br>
-                <span class="gradient-text">Arquitetura Primeiro. Código Depois.</span>
+                A IA não vai substituir os programadores.<br>
+                <span class="gradient-text">Vai substituir quem só sabe digitar código.</span>
             </h1>
             
             <p class="hero-subtitle">
-                O <strong>Spec Architect</strong> é o plano de controle visual para desenvolvimento orientado por especificações (SDD). 
-                Transforme intenções arquiteturais em contratos vivos, escopos rígidos e tarefas determinísticas para <strong>Claude Code, Cursor, Codex e Gemini CLI</strong>.
+                Na era do <strong>Vibe Coding</strong>, o verdadeiro superpoder humano não é debugar linhas que você nem escreveu — é dominar o <strong>Desenvolvimento Orientado a Especificações (SDD)</strong> para ditar as regras do jogo. 
+                Dar um prompt genérico esperando um software robusto é pura torcida: <strong>você cria o contrato e a arquitetura, a máquina executa o trabalho braçal.</strong>
             </p>
             
             <div class="hero-actions">
                 <a href="#download" class="btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Baixar para Linux (.deb / .AppImage)
+                    Baixar Spec Architect (.deb / .AppImage)
                 </a>
-                <a href="#paradigma" class="btn-secondary">
-                    Conheça a Metodologia SDD
+                <a href="#o-que-resolve" class="btn-secondary">
+                    O Que Ele Resolve na Prática ↓
                 </a>
             </div>
             
             <div class="hero-meta">
                 <span>⚡ Zero Dependências Globais</span>
                 <span>•</span>
-                <span>🦀 Tauri v2 + Rust</span>
+                <span>🦀 Tauri v2 + Rust Core</span>
                 <span>•</span>
                 <span>🛡️ Motor Isolado em Sandbox</span>
             </div>
@@ -82,7 +83,7 @@
                             <span class="control-dot yellow"></span>
                             <span class="control-dot green"></span>
                         </div>
-                        <div class="window-title">spec-architect // core-architecture / changes/2026-10-ledger-concurrency</div>
+                        <div class="window-title">spec-architect // workspace: core-engine / change: ledger-concurrency</div>
                         <div class="window-actions">
                             <span class="status-badge">● SDD Engine Active</span>
                         </div>
@@ -90,7 +91,7 @@
                     <div class="window-body">
                         <!-- Sidebar -->
                         <div class="window-sidebar">
-                            <div class="sidebar-heading">Especificações Vivas</div>
+                            <div class="sidebar-heading">Especificações Vivas (Specs)</div>
                             <div class="tree-item">📄 auth-tokens.spec.md</div>
                             <div class="tree-item">📄 tenant-isolation.spec.md</div>
                             <div class="tree-item active">📄 ledger-lock.spec.md</div>
@@ -188,13 +189,93 @@
             </div>
         </section>
 
+        <!-- WHAT SDD ACTUALLY SOLVES SECTION -->
+        <section class="section container" id="o-que-resolve">
+            <div class="section-header">
+                <span class="section-tag">Argumento Mata-Mata</span>
+                <h2 class="section-title">O Que o Desenvolvimento Orientado a Especificações RESOLVE de Verdade?</h2>
+                <p class="section-desc">
+                    Se alguém te perguntar por que essa metodologia importa, o argumento definitivo é o que ela resolve na prática:
+                </p>
+            </div>
+
+            <div class="solver-grid">
+                <!-- Solver Card 1 -->
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">🔄</span>
+                        <span class="solver-badge">Resolvido</span>
+                    </div>
+                    <h3 class="solver-title">O "Loop do Prompt Infinito"</h3>
+                    
+                    <div class="solver-block problem">
+                        <strong>O Problema do Vibe Coding</strong>
+                        Sabe quando você pede algo para a IA, ela conserta uma coisa, quebra outra e você passa horas colando código no chat sem entender nada?
+                    </div>
+
+                    <div class="solver-block solution">
+                        <strong>A Solução do Spec Architect</strong>
+                        Quebra esse ciclo pela raiz. Você cria um arquivo de especificação estruturado (spec) antes de qualquer linha de código. A IA lê o plano completo e implementa com precisão cirúrgica.
+                    </div>
+                </div>
+
+                <!-- Solver Card 2 -->
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">🧠</span>
+                        <span class="solver-badge">Resolvido</span>
+                    </div>
+                    <h3 class="solver-title">A "Amnésia" e Alucinação da IA</h3>
+                    
+                    <div class="solver-block problem">
+                        <strong>O Problema do Vibe Coding</strong>
+                        Modelos de linguagem perdem o contexto facilmente em chats longos. Começam a inventar dependências inexistentes e esquecem contratos decididos minutos antes.
+                    </div>
+
+                    <div class="solver-block solution">
+                        <strong>A Solução do Spec Architect</strong>
+                        A especificação funciona como uma "âncora de realidade" e fonte única da verdade no Git. Se a IA tentar inventar uma lógica maluca, ela é barrada pelo contrato técnico definido na spec.
+                    </div>
+                </div>
+
+                <!-- Solver Card 3 -->
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">🏗️</span>
+                        <span class="solver-badge">Resolvido</span>
+                    </div>
+                    <h3 class="solver-title">O Abismo entre Ideia e Engenharia</h3>
+                    
+                    <div class="solver-block problem">
+                        <strong>O Problema do Vibe Coding</strong>
+                        Escrever o código virou a parte barata da tecnologia. O erro é sair gerando código às cegas sem pensar nos casos de borda e regras críticas do sistema.
+                    </div>
+
+                    <div class="solver-block solution">
+                        <strong>A Solução do Spec Architect</strong>
+                        Força a sua cognição a pensar nos casos de borda, regras de negócio e integrações antes de gastar token. O humano arquiteta com visão estratégica; a máquina faz o trabalho braçal.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto Quote Card -->
+        <section class="manifesto-section container">
+            <div class="manifesto-card">
+                <p class="manifesto-quote">
+                    "Dar um prompt genérico para a IA esperando um software robusto é pura torcida. O <em>Desenvolvimento Orientado a Especificações</em> transforma o caos do 'vibe coding' amador em engenharia previsível: você cria o contrato e a arquitetura, a máquina executa o trabalho braçal."
+                </p>
+                <div class="manifesto-author">— Manifesto do Spec-Driven Development</div>
+            </div>
+        </section>
+
         <!-- The Paradigm Section: Vibecoding vs SDD -->
         <section class="section container" id="paradigma">
             <div class="section-header">
-                <span class="section-tag">O Paradigma de Engenharia</span>
-                <h2 class="section-title">Por que o Vibecoding Falha em Produção</h2>
+                <span class="section-tag">Engenharia vs Amadorismo</span>
+                <h2 class="section-title">A Diferença Entre Prompting Cego e SDD</h2>
                 <p class="section-desc">
-                    Agentes de IA são extraordinários para escrever sintaxe, mas desastrosos quando operam sem arquitetura formal e limites de contexto.
+                    Vibe coding funciona em brinquedos descartáveis. Software sério de produção exige limites formais e rastreabilidade.
                 </p>
             </div>
 
