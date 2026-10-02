@@ -10,7 +10,7 @@
     <meta property="og:description" content="Conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Compatível com projetos OpenSpec. Gratuito para Windows e Linux.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marcelofullstack.github.io/spec-architect-app/">
-    <link rel="stylesheet" href="style.css?v=20261002">
+    <link rel="stylesheet" href="style.css?v=20261002b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
             </h1>
 
             <p class="hero-openspec">
-                Compatível com projetos <strong>OpenSpec</strong>: abra qualquer pasta <code>openspec/</code> e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.
+                Compatível com <strong>OpenSpec</strong>: abra a pasta do seu projeto (se ele ainda não usa o Spec Architect, o app prepara tudo com um clique) e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.
             </p>
             
             <p class="hero-subtitle">
@@ -306,7 +306,7 @@
             </div>
 
             <div class="perf-stats">
-                <div><strong>27 MB</strong><span>Instalador Windows</span></div>
+                <div><strong>27 / 52 MB</strong><span>Instalador Windows / pacote .deb</span></div>
                 <div><strong>~90 MB</strong><span>Memória do núcleo em Rust</span></div>
                 <div><strong>0</strong><span>Runtimes para instalar</span></div>
             </div>
@@ -320,7 +320,7 @@
                 <div class="feat-card">
                     <div class="feat-tag">Performance</div>
                     <h3>Tauri v2 + Rust Core</h3>
-                    <p>Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: o instalador do Windows tem 27 MB.</p>
+                    <p>Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: 27 MB no instalador do Windows, 52 MB no pacote .deb.</p>
                 </div>
                 <div class="feat-card">
                     <div class="feat-tag">Imunidade</div>
@@ -338,11 +338,41 @@
                     <p>Nenhum código ou especificação é enviado para servidores proprietários. Seus arquivos residem estritamente no seu disco e no seu controle de versão.</p>
                 </div>
                 <div class="feat-card">
-                    <div class="feat-tag">Modularidade</div>
-                    <h3>Arquitetura Desacoplada</h3>
-                    <p>A camada de visualização é isolada do motor de execução, permitindo evolução e substituição transparente de motores no futuro sem afetar o fluxo do usuário.</p>
+                    <div class="feat-tag">Economia</div>
+                    <h3>Menos tokens, menos retrabalho</h3>
+                    <p>O agente recebe a especificação e uma tarefa de escopo fechado, não o histórico inteiro de um chat longo. Menos contexto repetido a cada mensagem e menos idas e vindas para consertar o que a IA inventou.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Getting started -->
+        <section class="section container howto" id="como-usar">
+            <div class="section-header">
+                <span class="section-tag">Como começar</span>
+                <h2 class="section-title">Do download à primeira mudança em 4 passos</h2>
+            </div>
+            <ol class="howto-steps">
+                <li>
+                    <span class="howto-num">1</span>
+                    <h3>Instale um agente e o app</h3>
+                    <p>Tenha uma CLI de agente logada (Claude Code, Codex, Cursor Agent, Kiro ou Antigravity) e instale o Spec Architect para Windows ou Linux.</p>
+                </li>
+                <li>
+                    <span class="howto-num">2</span>
+                    <h3>Abra a pasta do projeto</h3>
+                    <p>Escolha a raiz do seu repositório. Se ele ainda não usa o Spec Architect, o app prepara a estrutura com um clique; se já usa, tudo aparece na hora.</p>
+                </li>
+                <li>
+                    <span class="howto-num">3</span>
+                    <h3>Planeje com o agente</h3>
+                    <p>Descreva a mudança e o agente escreve proposta, requisitos, design e tarefas no console do app. Você revisa antes de qualquer linha de código.</p>
+                </li>
+                <li>
+                    <span class="howto-num">4</span>
+                    <h3>Implemente, verifique e arquive</h3>
+                    <p>O quadro acompanha as tarefas ao vivo. No fim, o agente verifica a implementação contra a spec e a mudança vai para o histórico.</p>
+                </li>
+            </ol>
         </section>
 
         <!-- Download Section -->
@@ -492,7 +522,7 @@
         </footer>
     </main>
 
-    <script src="i18n.js?v=20261002"></script>
-    <script src="app.js?v=20261002"></script>
+    <script src="i18n.js?v=20261002b"></script>
+    <script src="app.js?v=20261002b"></script>
 </body>
 </html>

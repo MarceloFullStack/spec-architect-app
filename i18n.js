@@ -27,9 +27,9 @@ const I18N_DATA = {
    "AI 不会取代程序员。<br> <span class=\"gradient-text\">它会取代那些只会向 AI 提需求的人。</span>"
   ],
   [
-   "Compatível com projetos <strong>OpenSpec</strong>: abra qualquer pasta <code>openspec/</code> e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.",
-   "Compatible with <strong>OpenSpec</strong> projects: open any <code>openspec/</code> folder and guide your AI agents through proposal, specification, tasks and archiving.",
-   "兼容 <strong>OpenSpec</strong> 项目：打开任意 <code>openspec/</code> 文件夹，引导你的 AI 智能体完成提案、规格、任务与归档。"
+   "Compatível com <strong>OpenSpec</strong>: abra a pasta do seu projeto (se ele ainda não usa o Spec Architect, o app prepara tudo com um clique) e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.",
+   "Compatible with <strong>OpenSpec</strong>: open your project folder (if it isn't set up for Spec Architect yet, the app prepares everything in one click) and guide your AI agents through proposal, specification, tasks and archiving.",
+   "兼容 <strong>OpenSpec</strong>：打开你的项目文件夹（若项目尚未使用 Spec Architect，应用一键即可完成准备），引导 AI 智能体完成提案、规格、任务与归档。"
   ],
   [
    "<strong>Tony Stark tem o JARVIS — mas ele nunca pede nada do nada.</strong> Ele domina especificações técnicas, tolerâncias milimétricas, física e pura cognição antes de mandar a máquina construir a armadura. O <strong>Spec Architect</strong> é a sua bancada de engenharia: você dita as especificações e contratos técnicos; os agentes de IA executam o trabalho braçal com precisão cirúrgica.",
@@ -417,9 +417,9 @@ const I18N_DATA = {
    "性能"
   ],
   [
-   "Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: o instalador do Windows tem 27 MB.",
-   "Rust core using about 90 MB of memory. The interface uses the system's own web view instead of bundling a whole Chromium like Electron apps: the Windows installer is 27 MB.",
-   "Rust 核心约占 90 MB 内存。界面使用系统自带的 WebView，而不像 Electron 应用那样内置整个 Chromium：Windows 安装包仅 27 MB。"
+   "Núcleo em Rust com cerca de 90 MB de memória. A interface usa o navegador do próprio sistema em vez de embutir um Chromium inteiro como os apps Electron: 27 MB no instalador do Windows, 52 MB no pacote .deb.",
+   "Rust core using about 90 MB of memory. The interface uses the system's own web view instead of bundling a whole Chromium like Electron apps: 27 MB for the Windows installer, 52 MB for the .deb package.",
+   "Rust 核心约占 90 MB 内存。界面使用系统自带的 WebView，而不像 Electron 应用那样内置整个 Chromium：Windows 安装包 27 MB，.deb 安装包 52 MB。"
   ],
   [
    "Imunidade",
@@ -462,19 +462,19 @@ const I18N_DATA = {
    "不会向任何专有服务器发送代码或规格。你的文件只存在于你的磁盘和版本控制中。"
   ],
   [
-   "Modularidade",
-   "Modularity",
-   "模块化"
+   "Economia",
+   "Economy",
+   "节省"
   ],
   [
-   "Arquitetura Desacoplada",
-   "Decoupled Architecture",
-   "解耦架构"
+   "Menos tokens, menos retrabalho",
+   "Fewer tokens, less rework",
+   "更少 token，更少返工"
   ],
   [
-   "A camada de visualização é isolada do motor de execução, permitindo evolução e substituição transparente de motores no futuro sem afetar o fluxo do usuário.",
-   "The visualization layer is isolated from the execution engine, allowing engines to evolve and be swapped transparently in the future without affecting the user's flow.",
-   "可视化层与执行引擎相互隔离，未来可透明地升级或替换引擎，而不影响用户的工作流。"
+   "O agente recebe a especificação e uma tarefa de escopo fechado, não o histórico inteiro de um chat longo. Menos contexto repetido a cada mensagem e menos idas e vindas para consertar o que a IA inventou.",
+   "The agent gets the specification and one narrowly scoped task, not the whole history of a long chat. Less context resent with every message and fewer round trips to fix what the AI made up.",
+   "智能体拿到的是规格和一个范围明确的任务，而不是冗长对话的完整历史。每条消息重复发送的上下文更少，为修正 AI 臆造内容而来回折腾的次数也更少。"
   ],
   [
    "Distribuição Oficial",
@@ -717,9 +717,9 @@ const I18N_DATA = {
    "验证"
   ],
   [
-   "Instalador Windows",
-   "Windows installer",
-   "Windows 安装包"
+   "Instalador Windows / pacote .deb",
+   "Windows installer / .deb package",
+   "Windows 安装包 / .deb 安装包"
   ],
   [
    "Memória do núcleo em Rust",
@@ -730,6 +730,56 @@ const I18N_DATA = {
    "Runtimes para instalar",
    "Runtimes to install",
    "需要安装的运行时"
+  ],
+  [
+   "Como começar",
+   "Getting started",
+   "快速开始"
+  ],
+  [
+   "Do download à primeira mudança em 4 passos",
+   "From download to your first change in 4 steps",
+   "从下载到第一个变更，只需 4 步"
+  ],
+  [
+   "Instale um agente e o app",
+   "Install an agent and the app",
+   "安装智能体与应用"
+  ],
+  [
+   "Tenha uma CLI de agente logada (Claude Code, Codex, Cursor Agent, Kiro ou Antigravity) e instale o Spec Architect para Windows ou Linux.",
+   "Have an AI agent CLI signed in (Claude Code, Codex, Cursor Agent, Kiro or Antigravity) and install Spec Architect for Windows or Linux.",
+   "登录一个 AI 智能体 CLI（Claude Code、Codex、Cursor Agent、Kiro 或 Antigravity），并安装 Windows 或 Linux 版 Spec Architect。"
+  ],
+  [
+   "Abra a pasta do projeto",
+   "Open the project folder",
+   "打开项目文件夹"
+  ],
+  [
+   "Escolha a raiz do seu repositório. Se ele ainda não usa o Spec Architect, o app prepara a estrutura com um clique; se já usa, tudo aparece na hora.",
+   "Pick the root of your repository. If it isn't set up for Spec Architect yet, the app prepares the structure in one click; if it is, everything shows up right away.",
+   "选择代码仓库的根目录。若尚未使用 Spec Architect，应用一键准备所需结构；若已使用，所有内容立即呈现。"
+  ],
+  [
+   "Planeje com o agente",
+   "Plan with the agent",
+   "与智能体一起规划"
+  ],
+  [
+   "Descreva a mudança e o agente escreve proposta, requisitos, design e tarefas no console do app. Você revisa antes de qualquer linha de código.",
+   "Describe the change and the agent writes the proposal, requirements, design and tasks in the app's console. You review it before any line of code.",
+   "描述变更，智能体会在应用控制台中写出提案、需求、设计与任务。你在写任何代码之前先行审阅。"
+  ],
+  [
+   "Implemente, verifique e arquive",
+   "Implement, verify and archive",
+   "实现、验证与归档"
+  ],
+  [
+   "O quadro acompanha as tarefas ao vivo. No fim, o agente verifica a implementação contra a spec e a mudança vai para o histórico.",
+   "The board follows the tasks live. At the end, the agent verifies the implementation against the spec and the change goes into the history.",
+   "看板实时跟踪任务。最后，智能体对照规格验证实现，变更随即归入历史。"
   ]
  ],
  "strings": {
