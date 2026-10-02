@@ -3,184 +3,411 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spec Architect — GUI Visual para Spec-Driven Development (SDD)</title>
-    <meta name="description" content="Spec Architect: Interface visual desktop para Spec-Driven Development (SDD) com agentes de IA. Community Edition — Gratuita para Sempre.">
-    <meta name="keywords" content="SDD, spec-driven development, IA, desenvolvimento orientado por especificações, GUI visual, community">
+    <title>Spec Architect — The Visual Control Plane for Spec-Driven Development (SDD)</title>
+    <meta name="description" content="Spec Architect é o plano de controle visual para desenvolvimento orientado por especificações (SDD) com agentes de IA. Chega de vibecoding: defina arquitetura, requisitos e contratos vivos.">
+    <meta name="keywords" content="Spec-Driven Development, SDD, Engenharia de Software, Arquitetura de Software, Claude Code, Cursor, Agentes de IA, Tauri v2, Rust">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Top Navigation -->
     <header class="header">
         <nav class="navbar">
-            <div class="navbar-brand">
-                <span class="logo">◇</span>
-                <span class="title">Spec Architect</span>
-            </div>
+            <a href="#" class="navbar-brand">
+                <span class="brand-icon">◇</span>
+                <span class="brand-name">Spec Architect</span>
+                <span class="brand-badge">SDD Engine</span>
+            </a>
             <div class="navbar-links">
-                <a href="#features">Recursos</a>
+                <a href="#paradigma">O Paradigma SDD</a>
+                <a href="#pipeline">Pipeline</a>
+                <a href="#engenharia">Arquitetura</a>
                 <a href="#download">Download</a>
-                <a href="#about">Sobre</a>
+            </div>
+            <div class="navbar-cta">
+                <a href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank" class="btn-nav">
+                    <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    GitHub
+                </a>
+                <a href="#download" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Baixar Binário</a>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Spec Architect</h1>
-                <p class="tagline">Visual Desktop GUI para Spec-Driven Development (SDD)</p>
-                <p class="subtitle">
-                    Transforme especificações estruturadas em código com agentes de IA.
-                    <strong>Community Edition — Gratuita para Sempre</strong>
+        <section class="hero container">
+            <div class="pill-announcement">
+                <span class="pill-dot"></span>
+                SPEC-DRIVEN DEVELOPMENT • NATIVE CONTROL PLANE
+            </div>
+            
+            <h1>
+                Chega de Vibecoding no Escuro.<br>
+                <span class="gradient-text">Arquitetura Primeiro. Código Depois.</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                O <strong>Spec Architect</strong> é o plano de controle visual para desenvolvimento orientado por especificações (SDD). 
+                Transforme intenções arquiteturais em contratos vivos, escopos rígidos e tarefas determinísticas para <strong>Claude Code, Cursor, Codex e Gemini CLI</strong>.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#download" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Baixar para Linux (.deb / .AppImage)
+                </a>
+                <a href="#paradigma" class="btn-secondary">
+                    Conheça a Metodologia SDD
+                </a>
+            </div>
+            
+            <div class="hero-meta">
+                <span>⚡ Zero Dependências Globais</span>
+                <span>•</span>
+                <span>🦀 Tauri v2 + Rust</span>
+                <span>•</span>
+                <span>🛡️ Motor Isolado em Sandbox</span>
+            </div>
+
+            <!-- Interface Blueprint Preview -->
+            <div class="mockup-wrapper">
+                <div class="mockup-glow"></div>
+                <div class="app-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control-dot red"></span>
+                            <span class="control-dot yellow"></span>
+                            <span class="control-dot green"></span>
+                        </div>
+                        <div class="window-title">spec-architect // core-architecture / changes/2026-10-ledger-concurrency</div>
+                        <div class="window-actions">
+                            <span class="status-badge">● SDD Engine Active</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <!-- Sidebar -->
+                        <div class="window-sidebar">
+                            <div class="sidebar-heading">Especificações Vivas</div>
+                            <div class="tree-item">📄 auth-tokens.spec.md</div>
+                            <div class="tree-item">📄 tenant-isolation.spec.md</div>
+                            <div class="tree-item active">📄 ledger-lock.spec.md</div>
+                            <div class="tree-item">📄 event-stream.spec.md</div>
+                            
+                            <div class="sidebar-heading" style="margin-top: 1.5rem;">Mudanças Ativas</div>
+                            <div class="tree-item active">📦 2026-10-ledger-concurrency</div>
+                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">├ proposal.md</div>
+                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">├ design.md</div>
+                            <div class="tree-item" style="padding-left: 1.5rem; font-size: 0.72rem;">└ tasks.md</div>
+                        </div>
+                        
+                        <!-- Main Kanban View -->
+                        <div class="window-main">
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+                                <div>
+                                    <h4 style="font-size: 1rem; font-weight: 600;">Fluxo da Mudança: Concorrência de Ledger</h4>
+                                    <p style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">Contrato: 4 invariantes • 8 tarefas atômicas</p>
+                                </div>
+                                <span class="status-badge" style="background: rgba(99,102,241,0.1); color: #a5b4fc; border-color: rgba(99,102,241,0.3);">
+                                    Agent Handoff Ready
+                                </span>
+                            </div>
+
+                            <div class="kanban-board">
+                                <div class="kanban-col">
+                                    <div class="col-header">
+                                        <span>Proposto</span>
+                                        <span class="col-count">2</span>
+                                    </div>
+                                    <div class="spec-card">
+                                        <div class="spec-card-tag">SPEC-DELTA</div>
+                                        <div class="spec-card-title">Definir trava otimista em transferências</div>
+                                        <div class="spec-card-meta">
+                                            <span>#task-01</span>
+                                            <span>spec/ledger</span>
+                                        </div>
+                                    </div>
+                                    <div class="spec-card">
+                                        <div class="spec-card-tag">SCHEMA</div>
+                                        <div class="spec-card-title">Adicionar coluna version e hash de bloco</div>
+                                        <div class="spec-card-meta">
+                                            <span>#task-02</span>
+                                            <span>db/migration</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-col">
+                                    <div class="col-header">
+                                        <span>Em Execução</span>
+                                        <span class="col-count">1</span>
+                                    </div>
+                                    <div class="spec-card" style="border-color: rgba(0, 242, 254, 0.4); box-shadow: 0 0 12px rgba(0, 242, 254, 0.1);">
+                                        <div class="spec-card-tag" style="color: var(--accent-cyan);">AGENTE ATIVO</div>
+                                        <div class="spec-card-title">Implementar retry com backoff exponencial</div>
+                                        <div class="spec-card-meta">
+                                            <span class="agent-avatar">🤖 Claude Code</span>
+                                            <span style="color: var(--accent-cyan);">75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-col">
+                                    <div class="col-header">
+                                        <span>Verificado</span>
+                                        <span class="col-count">5</span>
+                                    </div>
+                                    <div class="spec-card">
+                                        <div class="spec-card-tag" style="color: var(--accent-emerald);">AUDITADO</div>
+                                        <div class="spec-card-title">Testes de estresse com 10k transações/s</div>
+                                        <div class="spec-card-meta">
+                                            <span style="color: var(--accent-emerald);">✓ Passou</span>
+                                            <span>32 assertions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Telemetry / Agent Terminal -->
+                        <div class="window-terminal">
+                            <div class="sidebar-heading">Telemetria de Execução</div>
+                            <div class="terminal-line cmd">$ sdd-agent handoff --target claude</div>
+                            <div class="terminal-line info">[03:14:02] Carregando invariantes de ledger-lock...</div>
+                            <div class="terminal-line info">[03:14:03] Contrato auditado: 4 regras invioláveis.</div>
+                            <div class="terminal-line ai">[03:14:08] Agente Claude Code analisando tarefas...</div>
+                            <div class="terminal-line ai">[03:14:15] Editando src/ledger/concurrency.rs</div>
+                            <div class="terminal-line success">[03:14:22] cargo test --lib: 18 passed</div>
+                            <div class="terminal-line success">[03:14:26] ✓ Invariante #3 respeitada</div>
+                            <div class="terminal-line cmd" style="margin-top: 1rem;">$ pronto para verificação final_</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Paradigm Section: Vibecoding vs SDD -->
+        <section class="section container" id="paradigma">
+            <div class="section-header">
+                <span class="section-tag">O Paradigma de Engenharia</span>
+                <h2 class="section-title">Por que o Vibecoding Falha em Produção</h2>
+                <p class="section-desc">
+                    Agentes de IA são extraordinários para escrever sintaxe, mas desastrosos quando operam sem arquitetura formal e limites de contexto.
                 </p>
-                <div class="hero-badges">
-                    <span class="badge">🚀 Community Edition</span>
-                    <span class="badge">📖 GUI Visual</span>
-                    <span class="badge">∞ Gratuita</span>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Vibecoding (The Bad) -->
+                <div class="comp-card bad">
+                    <span class="comp-badge">O Caos do Prompting Cego</span>
+                    <h3>Prompt-and-Pray (Vibecoding)</h3>
+                    <ul class="comp-list">
+                        <li>
+                            <span class="comp-icon">✕</span>
+                            <span><strong>Deriva de Contexto:</strong> O agente perde a linha lógica na 4ª iteração e regride código que já funcionava.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✕</span>
+                            <span><strong>Arquitetura Invisível:</strong> Decisões estruturais ficam soterradas no histórico do chat e nunca viram documentação.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✕</span>
+                            <span><strong>Refatorações Destrutivas:</strong> Mudanças isoladas quebram contratos implícitos do sistema sem aviso prévio.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✕</span>
+                            <span><strong>Ilusão de Conclusão:</strong> O código compila no console, mas viola regras de negócio fundamentais da empresa.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="hero-cta">
-                    <a href="#download" class="button primary">Baixar Agora</a>
-                    <a href="#features" class="button secondary">Conheça o Fluxo SDD</a>
+
+                <!-- SDD (The Good) -->
+                <div class="comp-card good">
+                    <span class="comp-badge">A Abordagem de Engenharia</span>
+                    <h3>Spec-Driven Development (SDD)</h3>
+                    <ul class="comp-list">
+                        <li>
+                            <span class="comp-icon">✓</span>
+                            <span><strong>Contratos Vivos no Git:</strong> Especificações claras em Markdown/YAML evoluem lado a lado com a base de código.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✓</span>
+                            <span><strong>Handoff Determinístico:</strong> Agentes de IA recebem apenas tarefas atômicas com escopo restrito e critérios de aceite.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✓</span>
+                            <span><strong>Auditoria Antes do Código:</strong> Mudanças arquiteturais são propostas, debatidas e aprovadas antes de qualquer diff.</span>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✓</span>
+                            <span><strong>Previsibilidade Absoluta:</strong> A IA obedece à especificação, reduzindo retrabalho e alucinações técnicas a zero.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features" id="features">
-            <h2>Recursos Principais do Fluxo SDD</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <span class="feature-icon">📊</span>
-                    <h3>Dashboard de Mudanças</h3>
-                    <p>Visualize todas as suas propostas e mudanças de especificação em um painel unificado e intuitivo.</p>
+        <!-- The 4-Step SDD Pipeline -->
+        <section class="section container" id="pipeline">
+            <div class="section-header">
+                <span class="section-tag">Ciclo de Vida</span>
+                <h2 class="section-title">O Pipeline SDD em 4 Etapas</h2>
+                <p class="section-desc">
+                    Um fluxo sistemático de engenharia que substitui a tentativa-e-erro por precisão cirúrgica.
+                </p>
+            </div>
+
+            <div class="pipeline-grid">
+                <div class="pipeline-step">
+                    <span class="step-num">ETAPA 01</span>
+                    <h3 class="step-title">Propor & Explorar</h3>
+                    <p class="step-desc">
+                        Crie uma proposta de mudança (`proposal.md`), mapeie o impacto nas especificações existentes e defina o design arquitetural antes de escrever uma linha de código.
+                    </p>
                 </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🎯</span>
-                    <h3>Quadro Kanban de Tarefas</h3>
-                    <p>Acompanhe o ciclo de vida de cada mudança em tempo real com interface visual ágil e fluida.</p>
+                <div class="pipeline-step">
+                    <span class="step-num">ETAPA 02</span>
+                    <h3 class="step-title">Especificação Viva</h3>
+                    <p class="step-desc">
+                        Formalize os requisitos funcionais, cenários de teste e deltas de spec. Seus documentos são versionados no Git e nunca ficam defasados da realidade.
+                    </p>
                 </div>
-                <div class="feature-card">
-                    <span class="feature-icon">✏️</span>
-                    <h3>Editor de Artefatos</h3>
-                    <p>Gerencie propostas, designs estruturados, deltas de especificação e tarefas com validação contínua.</p>
+                <div class="pipeline-step">
+                    <span class="step-num">ETAPA 03</span>
+                    <h3 class="step-title">Handoff de Agentes</h3>
+                    <p class="step-desc">
+                        Despache tarefas estruturadas diretamente para Claude Code, Cursor, Codex ou Gemini CLI com contexto isolado, sem poluir a memória do modelo.
+                    </p>
                 </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🔍</span>
-                    <h3>Navegador de Especificações</h3>
-                    <p>Consulte requisitos vivos, cenários de aceitação e documentação técnica sempre sincronizados com o código.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🤖</span>
-                    <h3>Handoff para Agentes de IA</h3>
-                    <p>Orquestre Claude Code, Cursor, Gemini CLI e outros assistentes guiados por contexto rigoroso.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">✅</span>
-                    <h3>Auditoria e Verificação</h3>
-                    <p>Monitore a execução das tarefas e valide a conformidade de cada entrega antes do commit.</p>
+                <div class="pipeline-step">
+                    <span class="step-num">ETAPA 04</span>
+                    <h3 class="step-title">Auditoria & Conclusão</h3>
+                    <p class="step-desc">
+                        Verifique a conformidade da implementação contra a especificação original, execute testes de invariantes e arquive a mudança com histórico completo.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Technology Section -->
-        <section class="tech">
-            <h2>Arquitetura e Confiabilidade</h2>
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <h3>Tauri 2</h3>
-                    <p>Desktop app seguro, ultra-rápido e de baixo consumo</p>
+        <!-- Engineering & Architecture Section -->
+        <section class="section container" id="engenharia">
+            <div class="section-header">
+                <span class="section-tag">Infraestrutura</span>
+                <h2 class="section-title">Engenharia Sob o Capô</h2>
+                <p class="section-desc">
+                    Construído com padrões industriais para desenvolvedores que exigem performance, segurança e soberania técnica.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feat-card">
+                    <div class="feat-tag">Zero-Config</div>
+                    <h3>Motor Embutido em Sandbox</h3>
+                    <p>O interpretador e o motor de execução vêm 100% integrados no instalador. Você não precisa instalar Node, npm ou pacotes globais para usar o app.</p>
                 </div>
-                <div class="tech-item">
-                    <h3>Rust + React</h3>
-                    <p>Performance nativa aliada a uma interface moderna</p>
+                <div class="feat-card">
+                    <div class="feat-tag">Performance</div>
+                    <h3>Tauri v2 + Rust Core</h3>
+                    <p>Interface desktop ultra-leve com consumo inferior a 90MB de RAM. Resposta em tempo real sem o peso e a lentidão de aplicativos baseados em Electron.</p>
                 </div>
-                <div class="tech-item">
-                    <h3>Multiplataforma</h3>
-                    <p>Binários otimizados para Linux e Windows</p>
+                <div class="feat-card">
+                    <div class="feat-tag">Imunidade</div>
+                    <h3>Resistente a Quebras Externas</h3>
+                    <p>Mesmo que ferramentas de terceiros atualizem comandos ou quebrem APIs globais na sua máquina, seu ambiente de especificações continua 100% estável.</p>
                 </div>
-                <div class="tech-item">
-                    <h3>Zero Dependências</h3>
-                    <p>Motor de especificações 100% embutido — sem exigir Node ou CLI externa</p>
+                <div class="feat-card">
+                    <div class="feat-tag">Orquestração</div>
+                    <h3>Compatibilidade Multi-Agent</h3>
+                    <p>Suporte de primeira classe para Claude Code, Cursor, Gemini CLI, Kiro e Antigravity com detecção automática de ambiente e histórico isolado.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="feat-tag">Privacidade</div>
+                    <h3>100% Local-First & Git-Native</h3>
+                    <p>Nenhum código ou especificação é enviado para servidores proprietários. Seus arquivos residem estritamente no seu disco e no seu controle de versão.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="feat-tag">Modularidade</div>
+                    <h3>Arquitetura Desacoplada</h3>
+                    <p>A camada de visualização é isolada do motor de execução, permitindo evolução e substituição transparente de motores no futuro sem afetar o fluxo do usuário.</p>
                 </div>
             </div>
         </section>
 
         <!-- Download Section -->
-        <section class="download" id="download">
-            <h2>Download — Gratuito para Sempre</h2>
-            <div class="download-grid">
-                <div class="download-card">
-                    <h3>🐧 Linux</h3>
-                    <div class="download-options">
-                        <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.deb" class="download-link">.deb (Debian/Ubuntu)</a>
-                        <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.AppImage" class="download-link">.AppImage (Universal)</a>
-                    </div>
+        <section class="download-section" id="download">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Distribuição Oficial</span>
+                    <h2 class="section-title">Instale o Spec Architect</h2>
+                    <p class="section-desc">
+                        Binários autocontidos com verificação criptográfica SHA-256 incluída.
+                    </p>
                 </div>
-                <div class="download-card">
-                    <h3>🪟 Windows</h3>
-                    <div class="download-options">
-                        <a href="#" class="download-link">.msi Installer</a>
-                        <a href="#" class="download-link">.exe Portable</a>
-                    </div>
-                </div>
-            </div>
-            <div class="download-note">
-                <strong>Nota:</strong> macOS não faz parte do escopo desta versão. Todas as compilações são verificadas com SHA-256.
-            </div>
-        </section>
 
-        <!-- Community Section -->
-        <section class="community">
-            <div class="community-content">
-                <h2>Community Edition — Sempre Gratuita</h2>
-                <p>
-                    O Spec Architect é distribuído como Community Edition sem custos, sem cadastro obrigatório
-                    e sem limitações artificiais. O motor completo de SDD está incluído de forma funcional e definitiva.
-                </p>
-                <div class="community-features">
-                    <div class="community-feature">
-                        <span>✓</span> Sem necessidade de cadastro ou cartão
+                <div class="download-cards">
+                    <!-- Linux Card -->
+                    <div class="dl-card">
+                        <div class="dl-header">
+                            <span class="dl-os">🐧 Linux</span>
+                            <span class="dl-badge">Disponível</span>
+                        </div>
+                        <p class="dl-desc">Binários oficiais para distribuições baseadas em Debian, Ubuntu, Fedora e Arch Linux.</p>
+                        <div class="dl-actions">
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.deb" class="dl-btn primary">
+                                <span>Baixar Pacote .deb</span>
+                                <span class="dl-meta">50.9 MB</span>
+                            </a>
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases/download/v0.1.0/spec-architect_0.1.0_amd64.AppImage" class="dl-btn secondary">
+                                <span>Baixar Universal .AppImage</span>
+                                <span class="dl-meta">141.5 MB</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="community-feature">
-                        <span>✓</span> Sem limite de tempo ou trial
-                    </div>
-                    <div class="community-feature">
-                        <span>✓</span> Todas as features comunitárias incluídas
-                    </div>
-                    <div class="community-feature">
-                        <span>✓</span> Funciona 100% offline com runtime local
+
+                    <!-- Windows Card -->
+                    <div class="dl-card">
+                        <div class="dl-header">
+                            <span class="dl-os">🪟 Windows</span>
+                            <span class="dl-badge soon">Em Breve</span>
+                        </div>
+                        <p class="dl-desc">Instaladores nativos x64 com suporte para Windows 10 e Windows 11.</p>
+                        <div class="dl-actions">
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/releases" class="dl-btn secondary">
+                                <span>Ver Releases no GitHub</span>
+                                <span class="dl-meta">CI/CD Pipeline</span>
+                            </a>
+                            <a href="https://github.com/MarceloFullStack/spec-architect-app/issues" class="dl-btn secondary">
+                                <span>Solicitar Notificação</span>
+                                <span class="dl-meta">GitHub Issues</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- About Section -->
-        <section class="about" id="about">
-            <h2>Sobre o Spec Architect</h2>
-            <p>
-                O <strong>Spec Architect</strong> nasceu para tornar prático e visual o conceito de <strong>Spec-Driven Development (SDD)</strong>,
-                permitindo que desenvolvedores definam intenções claras em especificações antes de delegar a implementação para agentes autônomos de IA.
-            </p>
-            <p>
-                Com motor de execução embutido diretamente no binário do aplicativo, você obtém uma experiência autocontida:
-                sem conflito de versões, sem dependências globais e com estabilidade a longo prazo.
-            </p>
-            <p>
-                Desenvolvido por <strong>Marcelo Guimarães</strong> como parte do ecossistema de ferramentas de engenharia de software assistida por IA.
-            </p>
-            <div class="about-links">
-                <a href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank">Repositório Público</a>
-                <a href="https://github.com/MarceloFullStack/spec-architect-app/releases" target="_blank">Releases & Binários</a>
+                <!-- Terminal Quick Run -->
+                <div class="quick-install">
+                    <span class="code-snippet">chmod +x spec-architect_0.1.0_amd64.AppImage &amp;&amp; ./spec-architect_0.1.0_amd64.AppImage</span>
+                    <button class="copy-btn" onclick="navigator.clipboard.writeText('chmod +x spec-architect_0.1.0_amd64.AppImage &amp;&amp; ./spec-architect_0.1.0_amd64.AppImage'); this.innerText='Copiado!'; setTimeout(() => this.innerText='Copiar', 2000);">Copiar</button>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>
-                Spec Architect Community Edition — Gratuita para Sempre<br>
-                Autor & Criador: Marcelo Guimarães<br>
-                <small>© 2026. Projeto de código aberto.</small>
-            </p>
+            <div class="container footer-inner">
+                <div>
+                    <div class="footer-brand">Spec Architect</div>
+                    <div class="footer-copy">The Visual Control Plane for Spec-Driven Development (SDD)</div>
+                    <div style="font-size: 0.78rem; margin-top: 0.35rem; color: var(--text-muted);">Autor & Criador: Marcelo Guimarães</div>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/MarceloFullStack/spec-architect-app" target="_blank">Repositório</a>
+                    <a href="https://github.com/MarceloFullStack/spec-architect-app/releases" target="_blank">Releases</a>
+                    <a href="https://github.com/MarceloFullStack/spec-architect-app/blob/master/README.md" target="_blank">Documentação</a>
+                </div>
+            </div>
         </footer>
     </main>
 
