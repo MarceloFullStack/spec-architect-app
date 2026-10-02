@@ -27,9 +27,9 @@ const I18N_DATA = {
    "AI 不会取代程序员。<br> <span class=\"gradient-text\">它会取代那些只会向 AI 提需求的人。</span>"
   ],
   [
-   "A interface visual para <strong>OpenSpec</strong>: abra qualquer projeto <code>openspec/</code> e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.",
-   "The visual interface for <strong>OpenSpec</strong>: open any <code>openspec/</code> project and guide your AI agents through proposal, specification, tasks and archiving.",
-   "<strong>OpenSpec</strong> 的可视化界面：打开任意 <code>openspec/</code> 项目，引导你的 AI 智能体完成提案、规格、任务与归档。"
+   "Compatível com projetos <strong>OpenSpec</strong>: abra qualquer pasta <code>openspec/</code> e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.",
+   "Compatible with <strong>OpenSpec</strong> projects: open any <code>openspec/</code> folder and guide your AI agents through proposal, specification, tasks and archiving.",
+   "兼容 <strong>OpenSpec</strong> 项目：打开任意 <code>openspec/</code> 文件夹，引导你的 AI 智能体完成提案、规格、任务与归档。"
   ],
   [
    "<strong>Tony Stark tem o JARVIS — mas ele nunca pede nada do nada.</strong> Ele domina especificações técnicas, tolerâncias milimétricas, física e pura cognição antes de mandar a máquina construir a armadura. O <strong>Spec Architect</strong> é a sua bancada de engenharia: você dita as especificações e contratos técnicos; os agentes de IA executam o trabalho braçal com precisão cirúrgica.",
@@ -47,9 +47,9 @@ const I18N_DATA = {
    "它实际解决了什么 ↓"
   ],
   [
-   "🧩 Compatível com OpenSpec 1.13",
-   "🧩 Compatible with OpenSpec 1.13",
-   "🧩 兼容 OpenSpec 1.13"
+   "🧩 Compatível com OpenSpec",
+   "🧩 Compatible with OpenSpec",
+   "🧩 兼容 OpenSpec"
   ],
   [
    "⚡ Zero Dependências Globais",
@@ -724,14 +724,14 @@ const I18N_DATA = {
    "版本 {v} · 发布于 {d}"
   ],
   "title": [
-   "Spec Architect — Interface visual para OpenSpec e Spec-Driven Development (SDD)",
-   "Spec Architect — Visual interface for OpenSpec and Spec-Driven Development (SDD)",
-   "Spec Architect — OpenSpec 与规格驱动开发（SDD）的可视化界面"
+   "Spec Architect — Bancada visual de Spec-Driven Development (compatível com OpenSpec)",
+   "Spec Architect — Visual workbench for Spec-Driven Development (OpenSpec compatible)",
+   "Spec Architect — 规格驱动开发的可视化工作台（兼容 OpenSpec）"
   ],
   "description": [
-   "Spec Architect é a interface visual compatível com OpenSpec: abra qualquer projeto openspec/ e conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Community Edition gratuita para Windows e Linux.",
-   "Spec Architect is the OpenSpec-compatible visual interface: open any openspec/ project and guide Claude Code, Codex and other AI agents through proposal, specification, tasks and archiving. Free Community Edition for Windows and Linux.",
-   "Spec Architect 是兼容 OpenSpec 的可视化界面：打开任意 openspec/ 项目，引导 Claude Code、Codex 等 AI 智能体完成提案、规格、任务与归档。免费 Community Edition，支持 Windows 与 Linux。"
+   "Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.",
+   "Spec Architect is a visual workbench for Spec-Driven Development: guide Claude Code, Codex and other AI agents through proposal, specification, tasks and archiving. Compatible with OpenSpec projects. Free Community Edition for Windows and Linux.",
+   "Spec Architect 是规格驱动开发的可视化工作台：引导 Claude Code、Codex 等 AI 智能体完成提案、规格、任务与归档。兼容 OpenSpec 项目。免费 Community Edition，支持 Windows 与 Linux。"
   ],
   "screens_alt_home": [
    "Spec Architect: tela inicial do projeto com as mudanças e o atalho para planejar com um agente",
