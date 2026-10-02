@@ -53,8 +53,9 @@ function initializeLatestRelease() {
         .then(release => {
             const version = document.getElementById('dl-version');
             if (version && release.tag_name) {
-                const date = release.published_at ? new Date(release.published_at).toLocaleDateString('pt-BR') : '';
-                version.textContent = `Versão ${release.tag_name}${date ? ` · publicada em ${date}` : ''}`;
+                const locale = { pt: 'pt-BR', en: 'en-US', zh: 'zh-CN' }[window.siteLang] || 'pt-BR';
+                const date = release.published_at ? new Date(release.published_at).toLocaleDateString(locale) : '';
+                version.textContent = date ? t('version', { v: release.tag_name, d: date }) : release.tag_name;
                 version.hidden = false;
             }
             const sizes = {};
@@ -86,7 +87,7 @@ function initializeSupport() {
     document.querySelectorAll('[data-copy]').forEach(btn => {
         btn.addEventListener('click', () => {
             const text = document.getElementById(btn.dataset.copy)?.textContent.trim() || '';
-            const done = () => { btn.innerText = 'Copiado!'; setTimeout(() => (btn.innerText = 'Copiar'), 2000); };
+            const done = () => { btn.innerText = t('copied'); setTimeout(() => (btn.innerText = t('copy')), 2000); };
             if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, () => {});
         });
     });

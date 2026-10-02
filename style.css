@@ -1372,6 +1372,42 @@ body {
     text-decoration: underline;
 }
 
+/* Language switch */
+.lang-switch {
+    display: inline-flex;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.lang-switch button {
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 0.35rem 0.55rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.copy-btn {
+    white-space: nowrap;
+}
+
+.lang-switch button + button {
+    border-left: 1px solid var(--border-subtle);
+}
+
+.lang-switch button:hover {
+    color: var(--text-primary);
+}
+
+.lang-switch button.on {
+    background: rgba(99, 102, 241, 0.18);
+    color: var(--text-primary);
+}
+
 /* ---- Mobile ---------------------------------------------------------------- */
 
 @media (max-width: 860px) {
@@ -1423,8 +1459,10 @@ body {
     .section-header {
         margin-bottom: 2.25rem;
     }
+    /* Brand and language on one row; the hero has the download button */
     .brand-badge,
-    .navbar-cta .btn-nav {
+    .navbar-cta .btn-nav,
+    .navbar-cta .btn-primary {
         display: none;
     }
     .hero {
