@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spec Architect — Bancada visual de Spec-Driven Development (compatível com OpenSpec)</title>
-    <meta name="description" content="Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.">
+    <meta name="description" content="Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e finalização. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.">
     <meta name="keywords" content="OpenSpec, interface OpenSpec, OpenSpec GUI, Spec-Driven Development, SDD, Vibe Coding, Claude Code, Codex, Cursor Agent, Agentes de IA, Tauri v2, Rust">
     <meta property="og:title" content="Spec Architect — Bancada visual de Spec-Driven Development">
-    <meta property="og:description" content="Conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Compatível com projetos OpenSpec. Gratuito para Windows e Linux.">
+    <meta property="og:description" content="Conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e finalização. Compatível com projetos OpenSpec. Gratuito para Windows e Linux.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marcelofullstack.github.io/spec-architect-app/">
-    <link rel="stylesheet" href="style.css?v=20261002b">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css?v=20261003f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -55,19 +56,23 @@
             </div>
             
             <h1>
-                A IA não vai substituir os programadores.<br>
-                <span class="gradient-text">Vai substituir quem só sabe pedir pra IA.</span>
+                Pare de programar por tentativa e erro.<br>
+                <span class="gradient-text">Comece a construir com especificações.</span>
             </h1>
 
             <p class="hero-openspec">
-                Compatível com <strong>OpenSpec</strong>: abra a pasta do seu projeto (se ele ainda não usa o Spec Architect, o app prepara tudo com um clique) e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.
+                O <strong>Spec Architect</strong> é uma bancada visual de desenvolvimento orientado a especificações para agentes de IA: você planeja a mudança, revisa os documentos e entrega tarefas de escopo fechado a Claude Code, Codex e outros agentes, com tudo versionado no Git.
             </p>
-            
-            <p class="hero-subtitle">
-                <strong>Tony Stark tem o JARVIS — mas ele nunca pede nada do nada.</strong> Ele domina especificações técnicas, tolerâncias milimétricas, física e pura cognição antes de mandar a máquina construir a armadura.
-                O <strong>Spec Architect</strong> é a sua bancada de engenharia: você dita as especificações e contratos técnicos; os agentes de IA executam o trabalho braçal com precisão cirúrgica.
-            </p>
-            
+
+            <ol class="hero-flow">
+                <li>Ideia</li>
+                <li>Proposta</li>
+                <li>Requisitos</li>
+                <li>Tarefas</li>
+                <li>Agente</li>
+                <li>Verificação</li>
+            </ol>
+
             <div class="hero-actions">
                 <a href="#download" class="btn-primary">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -77,7 +82,12 @@
                     O Que Ele Resolve na Prática ↓
                 </a>
             </div>
-            
+
+            <p class="hero-subtitle">
+                <strong>A IA não vai substituir os programadores. Vai substituir quem só sabe pedir pra IA.</strong> Tony Stark não diz ao JARVIS “faz uma armadura aí”. Ele entrega o projeto: medidas, materiais, limites. O JARVIS constrói; ele testa cada peça antes de vestir.
+                O <strong>Spec Architect</strong> é a sua oficina: você define proposta, requisitos e tarefas, o agente executa, e a verificação confere se o resultado bate com o projeto.
+            </p>
+
             <div class="hero-meta">
                 <span>🧩 Compatível com OpenSpec</span>
                 <span>•</span>
@@ -105,8 +115,23 @@
                     </div>
                 </div>
                 <div class="screens-frame">
-                    <img id="screens-img" src="assets/screens/dark-pt-board.webp" width="1600" height="1000" alt="Spec Architect: quadro de mudanças com o progresso das tarefas de cada change">
+                    <img id="screens-img" src="assets/screens/dark-pt-board.webp?v=20261003" width="1600" height="1000" alt="Spec Architect: quadro de mudanças com o progresso das tarefas de cada change">
                 </div>
+            </div>
+        </section>
+
+        <!-- Entry point for people who already use OpenSpec -->
+        <section class="section container openspec-entry" id="openspec">
+            <div class="section-header">
+                <span class="section-tag">Para quem já usa OpenSpec</span>
+                <h2 class="section-title">Você já usa OpenSpec?</h2>
+                <p class="section-desc">
+                    O Spec Architect é compatível com o OpenSpec e usa de propósito os mesmos nomes de pastas e arquivos. Um projeto começado no OpenSpec abre aqui e continua de onde parou; um projeto começado aqui continua no OpenSpec. Sem conversão nos dois sentidos.
+                </p>
+                <a href="#download" class="btn-primary openspec-cta">Baixar e abrir meu projeto</a>
+                <p class="openspec-note">
+                    O Spec Architect é um projeto independente, sem vínculo com a Fission AI, criadora do OpenSpec. Não é um produto oficial do OpenSpec.
+                </p>
             </div>
         </section>
 
@@ -136,7 +161,7 @@
 
                     <div class="solver-block solution">
                         <strong>A Solução do Spec Architect</strong>
-                        Quebra esse ciclo pela raiz. Você cria um arquivo de especificação estruturado (spec) antes de qualquer linha de código. A IA lê o plano completo e implementa com precisão cirúrgica.
+                        Quebra esse ciclo pela raiz. Você cria um arquivo de especificação estruturado (spec) antes de qualquer linha de código. A IA lê o plano completo e implementa seguindo o que foi especificado.
                     </div>
                 </div>
 
@@ -238,7 +263,7 @@
                         </li>
                         <li>
                             <span class="comp-icon">✓</span>
-                            <span><strong>Handoff Determinístico:</strong> Agentes de IA recebem apenas tarefas atômicas com escopo restrito e critérios de aceite.</span>
+                            <span><strong>Handoff com Escopo Fechado:</strong> Agentes de IA recebem apenas tarefas atômicas com escopo restrito e critérios de aceite.</span>
                         </li>
                         <li>
                             <span class="comp-icon">✓</span>
@@ -246,7 +271,7 @@
                         </li>
                         <li>
                             <span class="comp-icon">✓</span>
-                            <span><strong>Previsibilidade Absoluta:</strong> A IA obedece à especificação, reduzindo retrabalho e alucinações técnicas a zero.</span>
+                            <span><strong>Mais Previsibilidade e Rastreabilidade:</strong> A IA trabalha a partir da especificação, o que reduz retrabalho e inconsistências, e cada decisão fica registrada.</span>
                         </li>
                     </ul>
                 </div>
@@ -259,7 +284,7 @@
                 <span class="section-tag">Ciclo de Vida</span>
                 <h2 class="section-title">O Pipeline SDD em 4 Etapas</h2>
                 <p class="section-desc">
-                    Um fluxo sistemático de engenharia que substitui a tentativa-e-erro por precisão cirúrgica.
+                    Um fluxo sistemático de engenharia que substitui a tentativa e erro por etapas revisáveis.
                 </p>
             </div>
 
@@ -289,7 +314,7 @@
                     <span class="step-num">ETAPA 04</span>
                     <h3 class="step-title">Auditoria & Conclusão</h3>
                     <p class="step-desc">
-                        Verifique a conformidade da implementação contra a especificação original, execute testes de invariantes e arquive a mudança com histórico completo.
+                        Verifique a conformidade da implementação contra a especificação original, execute testes de invariantes e finalize a mudança com histórico completo.
                     </p>
                 </div>
             </div>
@@ -369,7 +394,7 @@
                 </li>
                 <li>
                     <span class="howto-num">4</span>
-                    <h3>Implemente, verifique e arquive</h3>
+                    <h3>Implemente, verifique e finalize</h3>
                     <p>O quadro acompanha as tarefas ao vivo. No fim, o agente verifica a implementação contra a spec e a mudança vai para o histórico.</p>
                 </li>
             </ol>
@@ -522,7 +547,7 @@
         </footer>
     </main>
 
-    <script src="i18n.js?v=20261002b"></script>
-    <script src="app.js?v=20261002b"></script>
+    <script src="i18n.js?v=20261003f"></script>
+    <script src="app.js?v=20261003f"></script>
 </body>
 </html>

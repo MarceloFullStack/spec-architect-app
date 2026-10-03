@@ -22,19 +22,64 @@ const I18N_DATA = {
    "<span class=\"pill-dot\"></span> 规格驱动开发 • AI 时代的人类超能力"
   ],
   [
-   "A IA não vai substituir os programadores.<br> <span class=\"gradient-text\">Vai substituir quem só sabe pedir pra IA.</span>",
-   "AI won't replace programmers.<br> <span class=\"gradient-text\">It will replace those who only know how to prompt it.</span>",
-   "AI 不会取代程序员。<br> <span class=\"gradient-text\">它会取代那些只会向 AI 提需求的人。</span>"
+   "Pare de programar por tentativa e erro.<br> <span class=\"gradient-text\">Comece a construir com especificações.</span>",
+   "Stop coding by trial and error.<br> <span class=\"gradient-text\">Start building with specifications.</span>",
+   "别再靠反复试错写代码。<br> <span class=\"gradient-text\">从规格开始构建。</span>"
   ],
   [
-   "Compatível com <strong>OpenSpec</strong>: abra a pasta do seu projeto (se ele ainda não usa o Spec Architect, o app prepara tudo com um clique) e conduza seus agentes de IA por proposta, especificação, tarefas e arquivamento.",
-   "Compatible with <strong>OpenSpec</strong>: open your project folder (if it isn't set up for Spec Architect yet, the app prepares everything in one click) and guide your AI agents through proposal, specification, tasks and archiving.",
-   "兼容 <strong>OpenSpec</strong>：打开你的项目文件夹（若项目尚未使用 Spec Architect，应用一键即可完成准备），引导 AI 智能体完成提案、规格、任务与归档。"
+   "O <strong>Spec Architect</strong> é uma bancada visual de desenvolvimento orientado a especificações para agentes de IA: você planeja a mudança, revisa os documentos e entrega tarefas de escopo fechado a Claude Code, Codex e outros agentes, com tudo versionado no Git.",
+   "<strong>Spec Architect</strong> is a visual workbench for spec-driven development with AI agents: you plan the change, review the documents and hand tightly scoped tasks to Claude Code, Codex and other agents, with everything versioned in Git.",
+   "<strong>Spec Architect</strong> 是面向 AI 智能体的规格驱动开发可视化工作台：你规划变更、审阅文档，再把范围明确的任务交给 Claude Code、Codex 等智能体，一切都在 Git 中版本化。"
   ],
   [
-   "<strong>Tony Stark tem o JARVIS — mas ele nunca pede nada do nada.</strong> Ele domina especificações técnicas, tolerâncias milimétricas, física e pura cognição antes de mandar a máquina construir a armadura. O <strong>Spec Architect</strong> é a sua bancada de engenharia: você dita as especificações e contratos técnicos; os agentes de IA executam o trabalho braçal com precisão cirúrgica.",
-   "<strong>Tony Stark has JARVIS — but he never asks for things out of thin air.</strong> He masters technical specs, tight tolerances, physics and pure reasoning before telling the machine to build the suit. <strong>Spec Architect</strong> is your engineering workbench: you set the specifications and technical contracts; AI agents do the heavy lifting with surgical precision.",
-   "<strong>托尼·斯塔克有 JARVIS——但他从不凭空提要求。</strong>在让机器打造战甲之前，他已掌握技术规格、毫米级公差、物理与纯粹的推理。<strong>Spec Architect</strong> 就是你的工程工作台：你制定规格与技术契约，AI 智能体以外科手术般的精度完成繁重的工作。"
+   "Ideia",
+   "Idea",
+   "想法"
+  ],
+  [
+   "Proposta",
+   "Proposal",
+   "提案"
+  ],
+  [
+   "Tarefas",
+   "Tasks",
+   "任务"
+  ],
+  [
+   "Agente",
+   "Agent",
+   "智能体"
+  ],
+  [
+   "<strong>A IA não vai substituir os programadores. Vai substituir quem só sabe pedir pra IA.</strong> Tony Stark não diz ao JARVIS “faz uma armadura aí”. Ele entrega o projeto: medidas, materiais, limites. O JARVIS constrói; ele testa cada peça antes de vestir. O <strong>Spec Architect</strong> é a sua oficina: você define proposta, requisitos e tarefas, o agente executa, e a verificação confere se o resultado bate com o projeto.",
+   "<strong>AI won't replace programmers. It will replace those who only know how to prompt it.</strong> Tony Stark doesn't tell JARVIS “just build me a suit”. He hands over the design: measurements, materials, limits. JARVIS builds it; he tests every part before suiting up. <strong>Spec Architect</strong> is your workshop: you define the proposal, requirements and tasks, the agent carries them out, and verification checks that the result matches the design.",
+   "<strong>AI 不会取代程序员，它会取代那些只会向 AI 提需求的人。</strong>托尼·斯塔克不会对 JARVIS 说“随便给我做套战甲”。他交出的是设计：尺寸、材料、限制。JARVIS 负责打造，他在穿上之前测试每一个部件。<strong>Spec Architect</strong> 就是你的工作室：你定义提案、需求与任务，智能体执行，验证环节确认结果与设计一致。"
+  ],
+  [
+   "Para quem já usa OpenSpec",
+   "For OpenSpec users",
+   "写给已在使用 OpenSpec 的你"
+  ],
+  [
+   "Você já usa OpenSpec?",
+   "Already using OpenSpec?",
+   "你已经在用 OpenSpec 了吗？"
+  ],
+  [
+   "O Spec Architect é compatível com o OpenSpec e usa de propósito os mesmos nomes de pastas e arquivos. Um projeto começado no OpenSpec abre aqui e continua de onde parou; um projeto começado aqui continua no OpenSpec. Sem conversão nos dois sentidos.",
+   "Spec Architect is compatible with OpenSpec and deliberately uses the same folder and file names. A project started in OpenSpec opens here and picks up where it left off; a project started here carries on in OpenSpec. No conversion either way.",
+   "Spec Architect 与 OpenSpec 兼容，并有意使用相同的文件夹和文件名。在 OpenSpec 中开始的项目可以在这里打开并从上次停下的地方继续；在这里开始的项目也可以继续在 OpenSpec 中使用。双向都无需转换。"
+  ],
+  [
+   "Baixar e abrir meu projeto",
+   "Download and open my project",
+   "下载并打开我的项目"
+  ],
+  [
+   "O Spec Architect é um projeto independente, sem vínculo com a Fission AI, criadora do OpenSpec. Não é um produto oficial do OpenSpec.",
+   "Spec Architect is an independent project, not affiliated with Fission AI, the creator of OpenSpec. It is not an official OpenSpec product.",
+   "Spec Architect 是独立项目，与 OpenSpec 的创建者 Fission AI 无任何关联，也不是 OpenSpec 的官方产品。"
   ],
   [
    "Baixar Spec Architect (Windows / Linux)",
@@ -197,9 +242,9 @@ const I18N_DATA = {
    "<strong>Vibe Coding 的问题</strong> 你让 AI 做点什么，它修好一处却弄坏另一处，你花上几个小时把代码贴进聊天框，却什么也没弄明白？"
   ],
   [
-   "<strong>A Solução do Spec Architect</strong> Quebra esse ciclo pela raiz. Você cria um arquivo de especificação estruturado (spec) antes de qualquer linha de código. A IA lê o plano completo e implementa com precisão cirúrgica.",
-   "<strong>The Spec Architect Solution</strong> Breaks the cycle at the root. You write a structured specification before any line of code. The AI reads the complete plan and implements it with surgical precision.",
-   "<strong>Spec Architect 的方案</strong> 从根源上打破循环。在写任何代码之前先写出结构化的规格，AI 读取完整计划，再以外科手术般的精度实现。"
+   "<strong>A Solução do Spec Architect</strong> Quebra esse ciclo pela raiz. Você cria um arquivo de especificação estruturado (spec) antes de qualquer linha de código. A IA lê o plano completo e implementa seguindo o que foi especificado.",
+   "<strong>The Spec Architect Solution</strong> Breaks the cycle at the root. You write a structured specification before any line of code. The AI reads the complete plan and implements what was specified.",
+   "<strong>Spec Architect 的方案</strong> 从根源上打破循环。在写任何代码之前先写出结构化的规格，AI 读取完整计划，再按规格实现。"
   ],
   [
    "A \"Amnésia\" e Alucinação da IA",
@@ -292,9 +337,9 @@ const I18N_DATA = {
    "<strong>Git 中的活契约：</strong>清晰的 Markdown/YAML 规格与代码库同步演进。"
   ],
   [
-   "<strong>Handoff Determinístico:</strong> Agentes de IA recebem apenas tarefas atômicas com escopo restrito e critérios de aceite.",
-   "<strong>Deterministic Handoff:</strong> AI agents receive only atomic tasks with narrow scope and acceptance criteria.",
-   "<strong>确定性交接：</strong>AI 智能体只接收范围明确、带验收标准的原子任务。"
+   "<strong>Handoff com Escopo Fechado:</strong> Agentes de IA recebem apenas tarefas atômicas com escopo restrito e critérios de aceite.",
+   "<strong>Tightly Scoped Handoff:</strong> AI agents receive only atomic tasks with narrow scope and acceptance criteria.",
+   "<strong>范围明确的交接：</strong>AI 智能体只接收范围明确、带验收标准的原子任务。"
   ],
   [
    "<strong>Auditoria Antes do Código:</strong> Mudanças arquiteturais são propostas, debatidas e aprovadas antes de qualquer diff.",
@@ -302,9 +347,9 @@ const I18N_DATA = {
    "<strong>先审计后编码：</strong>架构变更在产生任何 diff 之前就经过提议、讨论与批准。"
   ],
   [
-   "<strong>Previsibilidade Absoluta:</strong> A IA obedece à especificação, reduzindo retrabalho e alucinações técnicas a zero.",
-   "<strong>Full Predictability:</strong> The AI follows the specification, cutting rework and technical hallucinations to zero.",
-   "<strong>完全可预测：</strong>AI 遵循规格，将返工与技术幻觉降到零。"
+   "<strong>Mais Previsibilidade e Rastreabilidade:</strong> A IA trabalha a partir da especificação, o que reduz retrabalho e inconsistências, e cada decisão fica registrada.",
+   "<strong>More Predictability and Traceability:</strong> The AI works from the specification, which reduces rework and inconsistencies, and every decision is recorded.",
+   "<strong>更可预测、可追溯：</strong>AI 依据规格工作，减少返工与不一致，每个决策都有记录。"
   ],
   [
    "Ciclo de Vida",
@@ -317,9 +362,9 @@ const I18N_DATA = {
    "SDD 四步流程"
   ],
   [
-   "Um fluxo sistemático de engenharia que substitui a tentativa-e-erro por precisão cirúrgica.",
-   "A systematic engineering flow that replaces trial and error with surgical precision.",
-   "以外科手术般的精度取代反复试错的系统化工程流程。"
+   "Um fluxo sistemático de engenharia que substitui a tentativa e erro por etapas revisáveis.",
+   "A systematic engineering flow that replaces trial and error with reviewable steps.",
+   "以可审阅的步骤取代反复试错的系统化工程流程。"
   ],
   [
    "ETAPA 01",
@@ -377,7 +422,7 @@ const I18N_DATA = {
    "审计与完成"
   ],
   [
-   "Verifique a conformidade da implementação contra a especificação original, execute testes de invariantes e arquive a mudança com histórico completo.",
+   "Verifique a conformidade da implementação contra a especificação original, execute testes de invariantes e finalize a mudança com histórico completo.",
    "Check the implementation against the original specification, run invariant tests and archive the change with its full history.",
    "对照原始规格核验实现，运行不变量测试，并连同完整历史归档变更。"
   ],
@@ -772,7 +817,7 @@ const I18N_DATA = {
    "描述变更，智能体会在应用控制台中写出提案、需求、设计与任务。你在写任何代码之前先行审阅。"
   ],
   [
-   "Implemente, verifique e arquive",
+   "Implemente, verifique e finalize",
    "Implement, verify and archive",
    "实现、验证与归档"
   ],
@@ -804,7 +849,7 @@ const I18N_DATA = {
    "Spec Architect — 规格驱动开发的可视化工作台（兼容 OpenSpec）"
   ],
   "description": [
-   "Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e arquivamento. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.",
+   "Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e finalização. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.",
    "Spec Architect is a visual workbench for Spec-Driven Development: guide Claude Code, Codex and other AI agents through proposal, specification, tasks and archiving. Compatible with OpenSpec projects. Free Community Edition for Windows and Linux.",
    "Spec Architect 是规格驱动开发的可视化工作台：引导 Claude Code、Codex 等 AI 智能体完成提案、规格、任务与归档。兼容 OpenSpec 项目。免费 Community Edition，支持 Windows 与 Linux。"
   ],
@@ -829,7 +874,7 @@ const I18N_DATA = {
    "Spec Architect：项目需求及格式化的场景"
   ],
   "screens_alt_history": [
-   "Spec Architect: histórico das mudanças arquivadas, com data e áreas de requisitos afetadas",
+   "Spec Architect: histórico das mudanças finalizadas, com data e áreas de requisitos afetadas",
    "Spec Architect: history of archived changes, with date and affected requirement areas",
    "Spec Architect：已归档变更的历史，包含日期与受影响的需求领域"
   ],

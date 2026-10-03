@@ -6,3 +6,12 @@
 *.tar.gz
 .DS_Store
 *.log
+
+# Ferramentas de desenvolvimento e planejamento (não vão para o site público)
+.agents/
+.claude/
+.cursor/
+.kiro/
+.spec-architect/
+.playwright-mcp/
+openspec/
