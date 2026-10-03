@@ -182,6 +182,10 @@ body {
     border-color: var(--border-hover);
 }
 
+.btn-support .support-heart {
+    color: #f43f5e;
+}
+
 /* Container */
 .container {
     max-width: 1240px;
@@ -1719,6 +1723,19 @@ body {
     .navbar-cta .btn-nav,
     .navbar-cta .btn-primary {
         display: none;
+    }
+    /* Support stays as the heart only */
+    .navbar-cta .btn-support {
+        display: inline-flex;
+        padding: 0.45rem 0.65rem;
+    }
+    .btn-support-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
     }
     .hero {
         padding-top: 2.5rem;
