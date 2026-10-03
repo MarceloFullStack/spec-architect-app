@@ -93,7 +93,7 @@ function initializeScreens() {
 }
 
 /**
- * Star count (public API, optional) and the Pix "copy" button.
+ * Star count (public API, optional).
  */
 function initializeSupport() {
     fetch(`https://api.github.com/repos/${RELEASE_REPO}`)
@@ -106,14 +106,6 @@ function initializeSupport() {
             }
         })
         .catch(() => {});
-
-    document.querySelectorAll('[data-copy]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const text = document.getElementById(btn.dataset.copy)?.textContent.trim() || '';
-            const done = () => { btn.innerText = t('copied'); setTimeout(() => (btn.innerText = t('copy')), 2000); };
-            if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, () => {});
-        });
-    });
 }
 
 /**

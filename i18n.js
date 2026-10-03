@@ -657,19 +657,29 @@ const I18N_DATA = {
    "⭐ 在 GitHub 上点 Star"
   ],
   [
-   "☕ Café dos finais de semana <span>100% voluntário</span>",
-   "☕ Weekend coffee <span>100% voluntary</span>",
-   "☕ 周末咖啡 <span>完全自愿</span>"
+   "☕ Outras formas de apoiar <span>100% voluntário</span>",
+   "☕ Other ways to support <span>100% voluntary</span>",
+   "☕ 其他支持方式 <span>完全自愿</span>"
   ],
   [
-   "O Spec Architect é um projeto livre e independente, feito nos finais de semana. Se ele te ajuda e você quiser apoiar a continuidade, um Pix de qualquer valor mantém o café quente nos sábados e domingos de código.",
-   "Spec Architect is a free, independent project built on weekends. If it helps you and you'd like to support its continuity, a Pix (Brazilian instant payment) of any amount keeps the coffee hot on coding Saturdays and Sundays.",
-   "Spec Architect 是一个利用周末开发的免费独立项目。如果它对你有帮助，并且你愿意支持它持续发展，任意金额的 Pix（巴西即时支付）都能让周末写代码时的咖啡保持温热。"
+   "O Spec Architect é um projeto livre e independente, feito nas horas vagas. Se ele te ajuda e você quiser apoiar a continuidade, escolha o caminho que preferir. Apoiar não libera nem muda nada: o app é o mesmo para todo mundo.",
+   "Spec Architect is a free, independent project built in spare time. If it helps you and you'd like to support its continuity, pick whichever way you prefer. Support unlocks and changes nothing: the app is the same for everyone.",
+   "Spec Architect 是一个利用业余时间开发的免费独立项目。如果它对你有帮助，并且你愿意支持它持续发展，请选择你喜欢的方式。支持不会解锁或改变任何东西：应用对所有人都一样。"
   ],
   [
-   "Chave Pix (e-mail)",
-   "Pix key (email)",
-   "Pix 密钥（邮箱）"
+   "♥ GitHub Sponsors",
+   "♥ GitHub Sponsors",
+   "♥ GitHub Sponsors"
+  ],
+  [
+   "☕ Ko-fi",
+   "☕ Ko-fi",
+   "☕ Ko-fi"
+  ],
+  [
+   "◆ Pix via LivePix",
+   "◆ Pix via LivePix",
+   "◆ Pix via LivePix"
   ],
   [
    "The Visual Control Plane for Spec-Driven Development (SDD)",
@@ -700,6 +710,11 @@ const I18N_DATA = {
    "Documentação",
    "Documentation",
    "文档"
+  ],
+  [
+   "Apoie",
+   "Support",
+   "支持"
   ],
   [
    "Debian / Ubuntu",

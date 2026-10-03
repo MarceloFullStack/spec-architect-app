@@ -1,5 +1,9 @@
 # Spec Architect
 
+[![Apoie no Ko-fi](https://img.shields.io/badge/Ko--fi-apoie%20o%20projeto-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/marcelofullstack)
+
+Apoio voluntário: [⭐ estrela no GitHub](https://github.com/MarceloFullStack/spec-architect-app) · [GitHub Sponsors](https://github.com/sponsors/MarceloFullStack) · [Ko-fi](https://ko-fi.com/marcelofullstack) · [Pix via LivePix](https://livepix.gg/marcelofullstack)
+
 **Pare de programar por tentativa e erro. Comece a construir com especificações.**
 
 🌐 Site: [marcelofullstack.github.io/spec-architect-app](https://marcelofullstack.github.io/spec-architect-app/)
