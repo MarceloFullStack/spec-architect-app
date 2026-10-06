@@ -79,7 +79,7 @@ function initializeScreens() {
     const lang = ['pt', 'en', 'zh'].includes(window.siteLang) ? window.siteLang : 'pt';
     const state = { view: 'board', theme: 'dark' };
     const show = () => {
-        img.src = `assets/screens/${state.theme}-${lang}-${state.view}.webp?v=20261003`;
+        img.src = `assets/screens/${state.theme}-${lang}-${state.view}.webp?v=20261006`;
         img.alt = t('screens_alt_' + state.view);
         document.querySelectorAll('[data-view]').forEach(b => {
             b.classList.toggle('on', b.dataset.view === state.view);
