@@ -1,6 +1,18 @@
 /* eslint-disable */
 const I18N_DATA = {
  "units": [
+  ["Novidades da versão 0.4.4", "What's new in 0.4.4", "0.4.4 版本新功能"],
+  ["Entenda o projeto antes de mexer nele", "Understand the project before you change it", "先理解项目，再动手修改"],
+  ["Quatro formas novas de enxergar o que o seu projeto faz, como ele chegou até aqui e onde o agente precisa de você.", "Four new ways to see what your project does, how it got here and where the agent needs you.", "四种新方式，帮你看清项目做了什么、如何走到今天，以及代理在哪里需要你。"],
+  ["Novo", "New", "新"],
+  ["Raio-X da aplicação", "X-ray of the application", "应用透视"],
+  ["Linha do tempo das especificações", "Timeline of the specifications", "规格时间线"],
+  ["Mapa de uso do código", "Code usage map", "代码使用图"],
+  ["Avisos por aba de projeto", "Alerts per project tab", "按项目标签提醒"],
+  ["Pergunte como algo funciona e receba uma explicação visual em linguagem simples: o caminho passo a passo, o que entra, o trecho real do código e o que sai. Quem responde é a CLI de agente que você escolher, e a resposta pode ser exportada em Markdown.", "Ask how something works and get a visual explanation in plain language: the path step by step, what comes in, the real lines of code and what comes out. The agent CLI you pick does the answering, and the answer can be exported as Markdown.", "询问某个功能如何运作，用通俗语言获得可视化说明：逐步路径、输入内容、真实的代码行以及输出结果。回答由你选择的代理 CLI 完成，并可导出为 Markdown。"],
+  ["Veja como cada requisito chegou ao texto atual: em qual mudança nasceu, o que cada mudança alterou, o antes e o depois, e os cenários de cada requisito em quadros Quando → Então.", "See how each requirement got to its current text: the change it was born in, what each change altered, before and after, and each requirement's scenarios as When → Then cards.", "查看每条需求如何演变到当前文本：它诞生于哪次变更、每次变更改了什么、前后对比，以及以“当 → 那么”卡片呈现的各个场景。"],
+  ["Escolha um arquivo e veja quem usa cada função, de dentro de qual função, e do que ele depende, num grafo em que dá para seguir a cadeia de chamadas.", "Pick a file and see who uses each function, from inside which function, and what it depends on, in a graph where you can follow the chain of calls.", "选择一个文件，查看每个函数被谁、在哪个函数中使用，以及它依赖什么，并可在图中沿调用链继续查看。"],
+  ["Cada aba mostra se o agente está trabalhando, terminou ou precisa de você, com um som diferente para cada caso, para você saber onde agir.", "Each tab shows whether the agent is working, has finished or needs you, with a different sound for each, so you know where to act.", "每个标签显示代理是在工作、已完成还是需要你，并为每种情况播放不同的提示音，让你知道该去哪里处理。"],
   [
    "O Que Resolve",
    "What It Solves",
