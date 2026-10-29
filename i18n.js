@@ -1,18 +1,18 @@
 /* eslint-disable */
 const I18N_DATA = {
  "units": [
-  ["Novidades da versão 0.4.4", "What's new in 0.4.4", "0.4.4 版本新功能"],
-  ["Entenda o projeto antes de mexer nele", "Understand the project before you change it", "先理解项目，再动手修改"],
-  ["Quatro formas novas de enxergar o que o seu projeto faz, como ele chegou até aqui e onde o agente precisa de você.", "Four new ways to see what your project does, how it got here and where the agent needs you.", "四种新方式，帮你看清项目做了什么、如何走到今天，以及代理在哪里需要你。"],
+  ["Novidades da versão 0.4.5", "What's new in 0.4.5", "0.4.5 版本新功能"],
+  ["Entenda cada mudança e saiba quando o agente terminou", "Understand each change and know when the agent is done", "看懂每次变更，及时知道代理何时完成"],
+  ["O que cada change fez no código, explicado em um só lugar, e avisos que chegam até você mesmo com o app em segundo plano.", "What each change did to the code, explained in one place, and alerts that reach you even with the app in the background.", "在一个地方讲清每次变更对代码做了什么，即使应用在后台，提醒也能送达。"],
+  ["Explicador de change", "Change explainer", "变更讲解"],
+  ["Avisos fora do app", "Alerts outside the app", "应用外提醒"],
+  ["Escolha uma change e veja o motivo, as tarefas, os requisitos alterados e o código: um mapa dos arquivos que ela mexeu, o diff de cada um e quem usa o quê. Se quiser, uma CLI de agente gera um tour da implementação, passo a passo, com o código real.", "Pick a change and see why it exists, its tasks, the requirements it altered and the code: a map of the files it touched, the diff of each one and who uses what. If you want, an agent CLI builds a tour of the implementation, step by step, with the real code.", "选择一个变更，查看它的动机、任务、改动的需求以及代码：它涉及文件的关系图、每个文件的差异，以及谁在使用什么。需要时，代理 CLI 还能生成逐步讲解实现的导览，附带真实代码。"],
+  ["Quando o agente termina ou precisa de você com a janela em segundo plano ou o console minimizado, o Spec Architect toca um som pelo sistema e mostra uma notificação com o nome do projeto.", "When the agent finishes or needs you while the window is in the background or the console is minimized, Spec Architect plays a system sound and shows a notification with the project name.", "当代理完成或需要你时，即使窗口在后台或控制台已最小化，Spec Architect 也会播放系统提示音，并显示带有项目名称的通知。"],
   ["Novo", "New", "新"],
   ["Raio-X da aplicação", "X-ray of the application", "应用透视"],
-  ["Linha do tempo das especificações", "Timeline of the specifications", "规格时间线"],
   ["Mapa de uso do código", "Code usage map", "代码使用图"],
-  ["Avisos por aba de projeto", "Alerts per project tab", "按项目标签提醒"],
   ["Pergunte como algo funciona e receba uma explicação visual em linguagem simples: o caminho passo a passo, o que entra, o trecho real do código e o que sai. Quem responde é a CLI de agente que você escolher, e a resposta pode ser exportada em Markdown.", "Ask how something works and get a visual explanation in plain language: the path step by step, what comes in, the real lines of code and what comes out. The agent CLI you pick does the answering, and the answer can be exported as Markdown.", "询问某个功能如何运作，用通俗语言获得可视化说明：逐步路径、输入内容、真实的代码行以及输出结果。回答由你选择的代理 CLI 完成，并可导出为 Markdown。"],
-  ["Veja como cada requisito chegou ao texto atual: em qual mudança nasceu, o que cada mudança alterou, o antes e o depois, e os cenários de cada requisito em quadros Quando → Então.", "See how each requirement got to its current text: the change it was born in, what each change altered, before and after, and each requirement's scenarios as When → Then cards.", "查看每条需求如何演变到当前文本：它诞生于哪次变更、每次变更改了什么、前后对比，以及以“当 → 那么”卡片呈现的各个场景。"],
   ["Escolha um arquivo e veja quem usa cada função, de dentro de qual função, e do que ele depende, num grafo em que dá para seguir a cadeia de chamadas.", "Pick a file and see who uses each function, from inside which function, and what it depends on, in a graph where you can follow the chain of calls.", "选择一个文件，查看每个函数被谁、在哪个函数中使用，以及它依赖什么，并可在图中沿调用链继续查看。"],
-  ["Cada aba mostra se o agente está trabalhando, terminou ou precisa de você, com um som diferente para cada caso, para você saber onde agir.", "Each tab shows whether the agent is working, has finished or needs you, with a different sound for each, so you know where to act.", "每个标签显示代理是在工作、已完成还是需要你，并为每种情况播放不同的提示音，让你知道该去哪里处理。"],
   [
    "O Que Resolve",
    "What It Solves",
