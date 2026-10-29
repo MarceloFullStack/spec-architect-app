@@ -77,9 +77,9 @@ function initializeScreens() {
     const img = document.getElementById('screens-img');
     if (!img) return;
     const lang = ['pt', 'en', 'zh'].includes(window.siteLang) ? window.siteLang : 'pt';
-    const state = { view: 'board', theme: 'dark' };
+    const state = { view: 'atlas', theme: 'dark' };
     const show = () => {
-        img.src = `assets/screens/${state.theme}-${lang}-${state.view}.webp?v=20261029`;
+        img.src = `assets/screens/${state.theme}-${lang}-${state.view}.webp?v=202610292`;
         img.alt = t('screens_alt_' + state.view);
         document.querySelectorAll('[data-view]').forEach(b => {
             b.classList.toggle('on', b.dataset.view === state.view);
@@ -90,6 +90,11 @@ function initializeScreens() {
     document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => { state.view = b.dataset.view; show(); }));
     document.querySelectorAll('.screens-theme [data-theme]').forEach(b => b.addEventListener('click', () => { state.theme = b.dataset.theme; show(); }));
     show();
+    document.querySelectorAll('[data-shot]').forEach(i => {
+        i.src = `assets/screens/dark-${lang}-${i.dataset.shot}.webp?v=202610292`;
+        i.alt = t('screens_alt_' + i.dataset.shot);
+        if (i.parentElement.tagName === 'A') i.parentElement.href = i.src;
+    });
 }
 
 /**

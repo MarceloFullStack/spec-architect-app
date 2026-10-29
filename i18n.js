@@ -1,6 +1,8 @@
 /* eslint-disable */
 const I18N_DATA = {
  "units": [
+  ["Atlas 3D", "3D atlas", "3D 图谱"],
+  ["Explicador", "Explainer", "变更解读"],
   ["Novidades da versão 0.4.5", "What's new in 0.4.5", "0.4.5 版本新功能"],
   ["Entenda cada mudança e saiba quando o agente terminou", "Understand each change and know when the agent is done", "看懂每次变更，及时知道代理何时完成"],
   ["O que cada change fez no código, explicado em um só lugar, e avisos que chegam até você mesmo com o app em segundo plano.", "What each change did to the code, explained in one place, and alerts that reach you even with the app in the background.", "在一个地方讲清每次变更对代码做了什么，即使应用在后台，提醒也能送达。"],
@@ -879,6 +881,16 @@ const I18N_DATA = {
    "Spec Architect é uma bancada visual de Spec-Driven Development: conduza Claude Code, Codex e outros agentes de IA por proposta, especificação, tarefas e finalização. Compatível com projetos OpenSpec. Community Edition gratuita para Windows e Linux.",
    "Spec Architect is a visual workbench for Spec-Driven Development: guide Claude Code, Codex and other AI agents through proposal, specification, tasks and archiving. Compatible with OpenSpec projects. Free Community Edition for Windows and Linux.",
    "Spec Architect 是规格驱动开发的可视化工作台：引导 Claude Code、Codex 等 AI 智能体完成提案、规格、任务与归档。兼容 OpenSpec 项目。免费 Community Edition，支持 Windows 与 Linux。"
+  ],
+  "screens_alt_atlas": [
+   "Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma",
+   "Spec Architect: 3D atlas of the capabilities and the changes that touched each one",
+   "Spec Architect：能力与涉及它们的变更的 3D 图谱"
+  ],
+  "screens_alt_explainer": [
+   "Spec Architect: explicador de change com o mapa dos arquivos alterados e o diff de cada um",
+   "Spec Architect: change explainer with the map of the changed files and the diff of each one",
+   "Spec Architect：变更解读，显示已修改文件的关系图以及每个文件的差异"
   ],
   "screens_alt_home": [
    "Spec Architect: tela inicial do projeto com as mudanças e o atalho para planejar com um agente",

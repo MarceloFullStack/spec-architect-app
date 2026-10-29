@@ -1811,3 +1811,7 @@ body {
 .solver-text { margin: 12px 0 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); }
 .solver-grid.news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 760px) { .solver-grid.news-grid { grid-template-columns: 1fr; } }
+
+/* What's new: the two screens under the cards */
+.news-shots { display: grid; gap: 24px; margin-top: 28px; }
+.news-shots a { display: block; }

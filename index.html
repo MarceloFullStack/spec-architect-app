@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marcelofullstack.github.io/spec-architect-app/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css?v=20261029">
+    <link rel="stylesheet" href="style.css?v=202610292">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -103,8 +103,10 @@
             <div class="screens" id="screens">
                 <div class="screens-bar">
                     <div class="screens-tabs" role="tablist">
+                        <button type="button" role="tab" data-view="atlas" class="on">Atlas 3D</button>
+                        <button type="button" role="tab" data-view="explainer">Explicador</button>
                         <button type="button" role="tab" data-view="home">Início</button>
-                        <button type="button" role="tab" data-view="board" class="on">Quadro</button>
+                        <button type="button" role="tab" data-view="board">Quadro</button>
                         <button type="button" role="tab" data-view="change">Mudança</button>
                         <button type="button" role="tab" data-view="spec">Requisitos</button>
                         <button type="button" role="tab" data-view="verify">Verificação</button>
@@ -116,7 +118,7 @@
                     </div>
                 </div>
                 <div class="screens-frame">
-                    <img id="screens-img" src="assets/screens/dark-pt-board.webp?v=20261029" width="1600" height="1000" alt="Spec Architect: quadro de mudanças com o progresso das tarefas de cada change">
+                    <img id="screens-img" src="assets/screens/dark-pt-atlas.webp?v=202610292" width="1600" height="1000" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma">
                 </div>
             </div>
         </section>
@@ -176,6 +178,10 @@
                     <h3 class="solver-title">Mapa de uso do código</h3>
                     <p class="solver-text">Escolha um arquivo e veja quem usa cada função, de dentro de qual função, e do que ele depende, num grafo em que dá para seguir a cadeia de chamadas.</p>
                 </div>
+            </div>
+            <div class="news-shots">
+                <a class="screens-frame" data-shot-link="atlas" href="assets/screens/dark-pt-atlas.webp?v=202610292" target="_blank" rel="noopener"><img data-shot="atlas" src="assets/screens/dark-pt-atlas.webp?v=202610292" width="1600" height="1000" loading="lazy" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma"></a>
+                <a class="screens-frame" data-shot-link="explainer" href="assets/screens/dark-pt-explainer.webp?v=202610292" target="_blank" rel="noopener"><img data-shot="explainer" src="assets/screens/dark-pt-explainer.webp?v=202610292" width="1600" height="1000" loading="lazy" alt="Spec Architect: explicador de change com o mapa dos arquivos alterados e o diff de cada um"></a>
             </div>
         </section>
 
@@ -590,7 +596,7 @@
         </footer>
     </main>
 
-    <script src="i18n.js?v=20261029"></script>
-    <script src="app.js?v=20261029"></script>
+    <script src="i18n.js?v=202610292"></script>
+    <script src="app.js?v=202610292"></script>
 </body>
 </html>
