@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://marcelofullstack.github.io/spec-architect-app/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css?v=202610292">
+    <link rel="stylesheet" href="style.css?v=20261112">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="screens-frame">
-                    <img id="screens-img" src="assets/screens/dark-pt-atlas.webp?v=202610292" width="1600" height="1000" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma">
+                    <img id="screens-img" src="assets/screens/dark-pt-atlas.webp?v=20261112" width="1600" height="1000" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma">
                 </div>
             </div>
         </section>
@@ -141,47 +141,47 @@
         <!-- WHAT'S NEW -->
         <section class="section container" id="novidades">
             <div class="section-header">
-                <span class="section-tag">Novidades da versão 0.4.5</span>
-                <h2 class="section-title">Entenda cada mudança e saiba quando o agente terminou</h2>
-                <p class="section-desc">O que cada change fez no código, explicado em um só lugar, e avisos que chegam até você mesmo com o app em segundo plano.</p>
+                <span class="section-tag">Novidades da versão 0.4.6</span>
+                <h2 class="section-title">Menos idas e voltas com o agente</h2>
+                <p class="section-desc">O agente que falta é instalado com um clique, as decisões ficam fechadas antes das tarefas e o TDD roda os testes por grupo.</p>
             </div>
             <div class="solver-grid news-grid">
                 <div class="solver-card">
                     <div class="solver-header">
-                        <span class="solver-icon">🧭</span>
+                        <span class="solver-icon">🧩</span>
                         <span class="solver-badge">Novo</span>
+                    </div>
+                    <h3 class="solver-title">Instale o agente que falta</h3>
+                    <p class="solver-text">Se o agente escolhido ainda não tem os comandos do fluxo no projeto, um clique em “Instalar para o agente” resolve. Os outros agentes, as suas preferências e a configuração do projeto continuam como estavam.</p>
+                </div>
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">✅</span>
+                        <span class="solver-badge">Novo</span>
+                    </div>
+                    <h3 class="solver-title">Decisões antes das tarefas</h3>
+                    <p class="solver-text">Ao planejar, o agente fecha com você como testar o sistema, a aparência, as regras de negócio, o ambiente e o que fica de fora. As respostas vão para os documentos, e a implementação não pergunta de novo.</p>
+                </div>
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">🧪</span>
+                        <span class="solver-badge">Novo</span>
+                    </div>
+                    <h3 class="solver-title">TDD por grupo de tarefas</h3>
+                    <p class="solver-text">Os testes de cada grupo rodam juntos e a suíte inteira só no fim. Builds pesados e benchmarks ficam listados no tests.md e só rodam se você pedir.</p>
+                </div>
+                <div class="solver-card">
+                    <div class="solver-header">
+                        <span class="solver-icon">🧭</span>
+                        <span class="solver-badge">0.4.5</span>
                     </div>
                     <h3 class="solver-title">Explicador de change</h3>
                     <p class="solver-text">Escolha uma change e veja o motivo, as tarefas, os requisitos alterados e o código: um mapa dos arquivos que ela mexeu, o diff de cada um e quem usa o quê. Se quiser, uma CLI de agente gera um tour da implementação, passo a passo, com o código real.</p>
                 </div>
-                <div class="solver-card">
-                    <div class="solver-header">
-                        <span class="solver-icon">🔔</span>
-                        <span class="solver-badge">Novo</span>
-                    </div>
-                    <h3 class="solver-title">Avisos fora do app</h3>
-                    <p class="solver-text">Quando o agente termina ou precisa de você com a janela em segundo plano ou o console minimizado, o Spec Architect toca um som pelo sistema e mostra uma notificação com o nome do projeto.</p>
-                </div>
-                <div class="solver-card">
-                    <div class="solver-header">
-                        <span class="solver-icon">🩻</span>
-                        <span class="solver-badge">0.4.4</span>
-                    </div>
-                    <h3 class="solver-title">Raio-X da aplicação</h3>
-                    <p class="solver-text">Pergunte como algo funciona e receba uma explicação visual em linguagem simples: o caminho passo a passo, o que entra, o trecho real do código e o que sai. Quem responde é a CLI de agente que você escolher, e a resposta pode ser exportada em Markdown.</p>
-                </div>
-                <div class="solver-card">
-                    <div class="solver-header">
-                        <span class="solver-icon">🔗</span>
-                        <span class="solver-badge">0.4.4</span>
-                    </div>
-                    <h3 class="solver-title">Mapa de uso do código</h3>
-                    <p class="solver-text">Escolha um arquivo e veja quem usa cada função, de dentro de qual função, e do que ele depende, num grafo em que dá para seguir a cadeia de chamadas.</p>
-                </div>
             </div>
             <div class="news-shots">
-                <a class="screens-frame" data-shot-link="atlas" href="assets/screens/dark-pt-atlas.webp?v=202610292" target="_blank" rel="noopener"><img data-shot="atlas" src="assets/screens/dark-pt-atlas.webp?v=202610292" width="1600" height="1000" loading="lazy" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma"></a>
-                <a class="screens-frame" data-shot-link="explainer" href="assets/screens/dark-pt-explainer.webp?v=202610292" target="_blank" rel="noopener"><img data-shot="explainer" src="assets/screens/dark-pt-explainer.webp?v=202610292" width="1600" height="1000" loading="lazy" alt="Spec Architect: explicador de change com o mapa dos arquivos alterados e o diff de cada um"></a>
+                <a class="screens-frame" data-shot-link="atlas" href="assets/screens/dark-pt-atlas.webp?v=20261112" target="_blank" rel="noopener"><img data-shot="atlas" src="assets/screens/dark-pt-atlas.webp?v=20261112" width="1600" height="1000" loading="lazy" alt="Spec Architect: atlas 3D das capabilities e das changes que mexeram em cada uma"></a>
+                <a class="screens-frame" data-shot-link="explainer" href="assets/screens/dark-pt-explainer.webp?v=20261112" target="_blank" rel="noopener"><img data-shot="explainer" src="assets/screens/dark-pt-explainer.webp?v=20261112" width="1600" height="1000" loading="lazy" alt="Spec Architect: explicador de change com o mapa dos arquivos alterados e o diff de cada um"></a>
             </div>
         </section>
 
@@ -596,7 +596,7 @@
         </footer>
     </main>
 
-    <script src="i18n.js?v=202610292"></script>
-    <script src="app.js?v=202610292"></script>
+    <script src="i18n.js?v=20261112"></script>
+    <script src="app.js?v=20261112"></script>
 </body>
 </html>
